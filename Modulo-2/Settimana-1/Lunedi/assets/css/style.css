@@ -188,16 +188,13 @@ footer a {
     header nav li{
         display: inline-block;
     }
-}
 
-/* 768 */
-
-@media screen AND (min-width:768px) {
     table { 
-        margin:0 auto 2em;
+        margin:3em auto 4em;
         width: 80%;
-    }
+    };
 }
+
 
 /* 992 */
 
