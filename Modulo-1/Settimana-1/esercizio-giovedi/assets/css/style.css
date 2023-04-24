@@ -1,0 +1,282 @@
+/* IMPOSTAZIONI GENERALI */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    width: 100vw;
+}
+
+
+body{
+    background-image: url("/assets/img/sfondo.png");
+    text-align: center;
+    color: #333;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+
+    
+} 
+
+div.container, div.wrapper {
+    width: 85%;
+    margin: 1.8rem auto 0 auto;
+    background-color: white;
+
+}
+
+div.wrapper {
+    box-shadow: 1px 1px 4px rgb(73, 69, 69);
+
+}
+
+header{
+    background: linear-gradient(to bottom, rgba(0,160,198,1), rgba(3,109,134,1));
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 4px rgb(73, 69, 69);
+    padding: 1.8rem 0 1.8rem 0;
+    margin-bottom: 1.8rem;
+    font-weight: 500;
+    
+}
+
+header nav ul {
+    list-style-type: none;
+    padding:0;
+    margin-bottom: 0;
+    
+    
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+
+}
+
+nav ul a:hover {
+    color: red;
+}
+
+main {
+    
+    padding: 1.7rem 1rem 0;
+    text-align: left;
+    width: 100%;
+    
+
+}
+
+h1 {
+    font-weight: 500;
+    color: black;
+    font-size: 2em;
+    line-height: 1.5em;
+    text-align: left;
+    margin:0
+}
+
+#fonte {
+    color: #b0a8a8; 
+}
+
+strong {
+    color: purple;
+    font-weight: 500;
+}  
+
+button.code {
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid rgb(198, 196, 196);
+    font-family: poppins;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+h2 {
+    font-family: Poppins;
+}
+
+table {
+    width:100%;
+    border-spacing: 0;
+    border-bottom: 2px solid  rgb(92, 92, 250, 0.9) ;
+    margin-bottom: 2.5rem;
+}
+
+table caption {
+    font-weight: 500; 
+}
+
+table tr th{
+    background-color: rgba(92, 92, 250, 0.9);
+    padding: 10px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    
+    
+    
+}
+
+td {
+    text-align: center;
+    padding: 0.5em;
+    
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(228, 220, 220, 0.4);
+    border-top: 1px solid #333;
+    
+} 
+
+a.tool-online {
+    color: rgb(68, 180, 250);
+    font-weight: 500;
+    
+}
+
+iframe {
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 2.5rem;
+}
+
+section#novita {
+    background-color: rgba(224, 219, 219);
+    padding: 0.9rem 1.1rem 1.1rem; 
+}
+
+section#novita h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+} 
+
+fieldset {
+    border: none;
+    padding:0;
+    
+}
+
+fieldset input {
+    border: none;
+    border-bottom: 1px dashed rgb(61, 59, 59);
+    padding: 0.4rem 0.5rem 0.4rem 0.3rem;
+    width: 70%;
+}
+
+fieldset button {
+    border: none;
+    color: white;
+    background-color: rgba(92, 92, 250, 0.9);
+    font-family: poppins;
+    width: 28%;
+    padding-top: 0.2rem;
+    margin-left: 0.1rem;
+    
+}
+
+aside {
+    padding: 1.7rem 1rem;
+
+}
+
+aside h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 1.7rem 0;
+}
+
+aside div {
+    background-color: rgb(224, 219, 219);
+    border: 1px solid  rgb(154, 153, 153, 0.5);
+    margin-bottom: 1.1rem;
+    padding: 1rem 1rem 0 1rem;
+    text-align: left;
+
+}
+
+aside div a {
+    color: rgb(91, 153, 230);
+    font-weight: 500;
+}
+
+aside div p:nth-of-type(1) {
+    margin :0 0 2rem 0;
+
+}
+
+aside div p:nth-of-type(2) {
+    text-align: right;
+
+}
+
+footer {
+    width: 85%;
+    margin: 1.7rem auto 1.8rem auto;
+    background: linear-gradient(to bottom, rgba(0,160,198,1), rgba(3,109,134,1));
+    box-shadow: 1px 1px 4px rgb(73, 69, 69);
+    color: white;
+    padding: 1rem 0.8rem 1.5rem;
+
+}
+
+footer p {
+    margin-top: 0;
+}
+
+footer a {
+    color: rgb(221, 40, 194);
+    text-transform: initial;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER */
+
+/* MAIN */
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */

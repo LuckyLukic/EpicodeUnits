@@ -1,0 +1,118 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.8em;
+    box-sizing: border-box;
+
+}
+
+main, footer {
+    width: 60%;
+    margin: 0 auto;
+}
+
+ul li {
+    line-height: 1.8rem;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+
+}
+
+footer label {
+    font-size: 1rem;
+} 
+
+html {
+    background: linear-gradient(90deg, #FFF2CC, #DFA67B);
+    width: 100vw;
+}
+
+h1 {
+    font-size: 1.9rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+header {
+    width: 100vw;
+
+}
+
+.logo {
+    text-align: center;
+}
+
+div.logo {
+    margin: 20px 0;
+}
+
+p.taglina {
+    background-color: whitesmoke;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    
+}
+
+section.presentazione {
+    text-align: center;
+}
+
+section.presentazione p{
+    text-align: left;
+}
+
+section.presentazione figure {
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 10px;
+}
+img.logo-azienda {
+    max-width: 200px;
+}
+
+
+div.featured {
+    border-left: 2px solid gray;
+    padding-left: 10px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+div.featured p {
+    color: #BBD6B8;
+    font-weight: bold;
+    margin-bottom: 5px;
+} 
+
+section.ingredient h2 {
+    border-bottom: 3px solid gray;
+    padding: 30px 0 20px 0;
+}
+
+section.method h2  {
+    margin-top: 20px;
+}
+
+
+
+
+
