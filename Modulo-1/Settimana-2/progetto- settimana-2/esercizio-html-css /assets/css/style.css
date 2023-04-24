@@ -1,0 +1,173 @@
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    width: 100vw;
+} 
+
+body {
+    text-align: center;
+}
+
+header, footer {
+    background-color: #22303F;
+    
+}
+
+header {
+    text-align: left;
+    padding: 0.2rem 1.1rem;
+}
+
+nav {
+    padding: 0.2rem;
+}
+
+nav, .footer-link {
+    background-color: #354859;
+
+}
+
+nav, .miniWrapper {
+    text-align: left;
+}
+
+img.header-logo {
+    width: 8.5%;
+}
+
+nav ul {
+    padding:0 1.1rem 0.2rem;
+    margin:0;
+}
+
+nav ul a, .footer-link, section.top p, h1{
+    color: #F8FFFF;
+}
+nav ul a {
+text-decoration: none;
+    font-size: 0.75em;
+    font-weight: lighter;
+    margin-right: 0.7rem;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    
+}
+
+main {
+    background-color: #EAEDEE;
+    padding: 1.1rem 1.1rem;
+}
+
+/* TOP SECTION */
+
+section.top {
+    margin-bottom: 1.1rem;
+}
+
+section.top p {
+    margin:0;
+    padding: 0.4rem 0;
+}
+
+div.top-orange {
+    background-color: #F56700;
+    margin-bottom: 1rem;
+}
+
+div.top-green {
+    background-image: url("../img/bg-image.png");
+    background-size: contain;
+
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 2.5rem 0 0;
+    margin:0 0 0.5rem;
+}
+
+div.top-green p {
+    padding-bottom: 2rem;
+
+}
+
+/* CARDS */
+
+section.cards {
+    background-color: #FFFFFF;
+    margin-bottom: 1.1rem;
+    text-align: center;
+    
+}
+
+.miniWrapper p {
+    display: inline-block;
+    margin:0.7rem 0.7rem ;
+}
+
+.miniWrapper a {
+    text-decoration: none;
+    color: #0C686D;
+    
+}
+
+.cards-img {
+    height: 15rem;
+    width: 12rem;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgb(220, 220, 220);
+    margin:0 0.65rem 1.1rem;
+    object-fit: cover;
+    
+}
+
+/* 2 BANNERS */
+
+.ban {
+    margin-bottom: 1.1rem;
+}
+
+.ban-img {
+    width:100%;
+}
+
+.ban-txt {
+display: inline-block;
+margin:0 0.7rem;
+}
+
+.ban-lnk {
+    text-decoration: none;
+    color: #0C686D;
+}
+
+.banner2 {
+    margin-bottom: 0;
+}
+
+/* FOOTER */
+
+.footer-link {
+    display: block;
+    background-color: #354859;
+    padding: 0.5rem;
+    font-size: 0.75em ;
+    
+}
+
+.footer-logo {
+    width: 11%;
+    padding:2rem 0 2.5rem;
+}
+
+
+
