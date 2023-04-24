@@ -221,7 +221,7 @@ footer a {
     header div p {
         position: absolute;
         top: calc(50% - 10px);
-        left: 35%;
+        left: 12em;
     }
 
     header div img {
