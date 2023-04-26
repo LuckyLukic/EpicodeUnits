@@ -712,4 +712,4 @@ const isItPrime = (num) => {
 
 }  
 }
-console.log(isItPrime(8))
+console.log(isItPrime(2))
