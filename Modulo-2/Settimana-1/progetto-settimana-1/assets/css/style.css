@@ -1,0 +1,379 @@
+body,
+html {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    width: 100vw;
+    background-color: white;
+    font-family: Roboto, sans-serif;
+}
+
+h1,h2,h3,h4,p {
+    margin:0;
+}
+
+header {
+    background-color: #FEC117;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid black;
+    position: fixed;
+}
+
+.switchColor1 {
+    background-color: white;
+    transition: background-color 0.5s linear 0.1s;
+}
+
+.switchColor2 {
+    background-color: #FEC117;
+    transition: background-color 0.5s linear 0.1s;
+}
+
+.header-container {
+    width:64%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0 0.6rem;
+    color:black;
+    font-size: 0.85rem;
+    font-weight: 300;
+    letter-spacing: 0.02rem;
+}
+
+nav button {
+    color:white;
+    background-color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 0.7rem 1.2rem;
+    margin-left: 0.6rem;
+}
+
+.switchColor3 {
+        background-color: rgb(47, 243, 47);
+        transition: background-color 0.5s linear 0.1s;
+    }
+
+.switchColor4 {
+        background-color: black;
+        transition: background-color 0.5s linear 0.1s;
+    }
+
+/* section hero */
+
+section.hero {
+    background-color: #FEC117;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid black;
+    padding-top: 3rem;
+}
+
+.hero-container {
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.hero-container-testo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 { 
+    font-family: spectral;
+    font-weight: 400;
+    font-size: 6.5rem;
+}
+
+h2 {
+    width:70%;
+    margin:0 0 3rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.02rem;
+}
+
+.hero-button {
+    align-self:flex-start;
+    border: none;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    padding: 0.7rem 2.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+/* sezione trending */
+
+section.trending {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 0 3rem;
+    border-bottom: 1px solid rgb(208, 203, 203,0.5);
+}
+
+.trending-wrapper {
+    width:64%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.trending-medium {
+    display:flex;
+    align-items: center;
+}
+
+.trending-medium h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 0.6rem;
+}
+
+/* Sezione Trending Single Article */
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:100%;
+    row-gap: 2rem;
+}
+
+.article-wrapper {
+    display: flex;
+    padding-top: 0.5rem;
+    width: 33%;
+}
+
+.article-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 1rem;
+}
+
+.article-number p {
+    font-size: 2rem;
+    font-family: arial;
+    color:  rgba(230,230,230,0.9);
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article-text h3 {
+    margin: 0.6rem 0;
+}
+
+.article-text h3 {
+    font-size: 1rem;
+}
+
+.article-text p {
+    font-size: 0.8rem;
+}
+
+.article-text-source {
+    display: flex;
+    align-items: center;
+    padding-top: 0.2rem;
+}
+
+.article-text-source img {
+    width:1.4rem;
+    border-radius: 100px;
+    margin-right: 0.1rem;
+} 
+
+.article-text-source p {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    font-weight: 500;
+}
+
+/* SECTION NEWSCOLLECTION */
+
+section.newsCollection {
+    display: flex;
+    justify-content: center;
+    padding-top: 3.5rem;
+}
+
+section .contentWrapper {
+    width: 64%;
+    display: flex;
+    column-gap: 6.5rem;
+}
+
+article.singleNews-wrapper{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.articleText {
+    margin-bottom: 1rem;
+}
+
+.articleDetails-left {
+    display: flex;
+    align-items: center;
+
+}
+
+.article-image img {
+    width: 200px;
+    object-fit: contain;
+    margin-left: 2rem;
+}
+
+.articleFooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.articleFooter .topic{
+    display:inline-block;
+    border-radius: 50px;
+    background-color: rgba(230,230,230,0.5);
+    padding: 0.4rem;
+}
+
+/* FOOTER */
+
+footer {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 200px;
+    z-index: 0;
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+}
+
+.preference h3 {
+    margin-bottom: 1rem;
+}
+
+nav.preference {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgb(208, 203, 203,0.5);
+    padding-bottom: 1.4rem;
+}
+.footer-preferenceLink-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 0.4rem;
+}
+nav.preference a {
+    background-color: rgba(230,230,230,0.5);
+    padding: 0.6rem 1rem;
+    border-radius: 100px;
+}
+
+nav.preference a.extraTopics {
+    color:green;
+    background-color: white;
+    padding: 0.6rem 0;
+}
+
+nav.utilities {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.8rem;
+}
+
+nav.utilities a {
+    padding-left: 0;
+    padding-right: 2rem;
+    color: rgb(101, 97, 97, 0.9);
+    font-weight: 300;
+}
+
+/* MEDIA QUERIES */
+
+/* <1400 px */
+
+@media screen and (max-width: 1400px) {
+    .header-container {
+        width:90%;
+}
+
+    .hero-container {
+        width:95%;
+}
+
+    .trending-wrapper {
+        width:90%;
+    }
+
+    section .contentWrapper {
+        width: 90%;
+}
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 996px) {
+
+    h1 {
+        font-size: 3.5rem;
+     }
+
+     .article-wrapper {
+        width: 45%;
+    }
+
+    section .contentWrapper {
+        display:flex;
+        flex-direction: column-reverse;
+    }
+
+    article.singleNews-wrapper {
+        justify-content: space-between;
+    }
+
+    footer {
+        width: 100%;
+        position:static;
+    }
+
+}
+
+
+    
+
+
+
+
+
+
+
+
+
