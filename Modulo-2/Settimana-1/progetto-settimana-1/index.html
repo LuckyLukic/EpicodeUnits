@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Spectral:wght@300;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Spectral:wght@300;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <!--aggiungi link al reset.css -->
@@ -25,27 +25,28 @@
                     <a href="#">Our story</a>
                     <a href="#">Membership</a>
                     <a href="#">Write</a>
-                    <a href="#">Sign In</a>
+                    <a href="#" class="signIn">Sign In</a>
                     <button type="button">Get Started</button>
                 </div>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-container-testo">
-                <h1>Stay curious.</h1>
-                <h2>Discover store, thinking, and espertise from writers on any topic.</h2>
-                <button class="hero-button" type="button">Start reading</button>
-            </div>
-            <div class="hero-container-svg">
-                <img src="assets/imgs/svg/m.svg" alt="m">
-            </div>
-        </div>
-    </section>
-
     <main>
+
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-container-testo">
+                    <h1>Stay curious.</h1>
+                    <h2>Discover store, thinking, and espertise from writers on any topic.</h2>
+                    <button class="hero-button" type="button">Start reading</button>
+                </div>
+                <div class="hero-container-svg">
+                    <img src="assets/imgs/svg/m.svg" alt="m">
+                </div>
+            </div>
+        </section>
+
         <section class="trending">
             <div class="trending-wrapper">
                 <div class="trending-medium">
@@ -54,7 +55,7 @@
                 </div>
                 <div class="articles-container">
 
-                    <article class="article-wrapper">
+                    <article class="article-wrapper article1">
                         <div class="article-number">
                             <p>01</p>
                         </div>
@@ -64,7 +65,9 @@
                                 <p>Arthur Hayes</p>
                             </div>
                             <h3>Exit Liquidity</h3>
-                            <p><span>Apr 21</span> - <span>27 min read</span></p>
+                            <div class="article-date">
+                                <p><span>Apr 21</span> - <span>27 min read</span></p>
+                            </div>
                         </div>
                     </article>
 
@@ -78,7 +81,9 @@
                                 <p>Joe Duncan</p>
                             </div>
                             <h3>The Disney-DeSantis Battle Has Crossed a Terrifying Line</h3>
-                            <p><span>Apr 22</span> - <span>5 min read</span></p>
+                            <div class="article-date">
+                                <p><span>Apr 22</span> - <span>5 min read</span></p>
+                            </div>
                         </div>
                     </article>
 
@@ -92,7 +97,11 @@
                                 <p>Alexander Nguyen <span class="span-article3">in</span> Level Up Coding</p>
                             </div>
                             <h3>Why I Keep Failing Candidates During Google Interviews...</h3>
-                            <p><span>Apr 13</span> - <span>4 min read</span></p>
+                            <div class="article-date">
+                                <p><span>Apr 13</span> - <span>4 min read</span></p>
+                                <img src="assets/imgs/svg/star.svg" alt="logo star">
+
+                            </div>
                         </div>
                     </article>
 
@@ -106,7 +115,9 @@
                                 <p>Akilah Hughes</p>
                             </div>
                             <h3>I Hope Frank Ocean is Okay</h3>
-                            <p><span>Apr 18</span> - <span>7 min read</span></p>
+                            <div class="article-date">
+                                <p><span>Apr 18</span> - <span>7 min read</span></p>
+                            </div>
                         </div>
                     </article>
 
@@ -120,7 +131,9 @@
                                 <p>Cassie Kozyrkoc</p>
                             </div>
                             <h3>How AI is Evolving</h3>
-                            <p><span>Apr 27</span> - <span>3 min read</span></p>
+                            <div class="article-date">
+                                <p><span>Apr 27</span> - <span>3 min read</span></p>
+                            </div>
                         </div>
                     </article>
 
@@ -134,17 +147,22 @@
                                 <p>Felicia Wu <span class="span-article4">in</span> UX Collective</p>
                             </div>
                             <h3>My first layoff was the best thing that could happen to my career</h3>
-                            <p><span>Apr 24</span> - <span>7 min read</span></p>
+                            <div class="article-date">
+                                <p><span>Apr 24</span> - <span>7 min read</span></p>
+                            </div>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
+        <!-- SECTION ARTICOLLI -->
+
         <section class="newsCollection">
             <div class="contentWrapper">
                 <div class="newsCollection-singleNews">
 
+                    <!-- feed articoli -->
                     <article class="singleNews-wrapper">
                         <dwiv class="article-text">
                             <div class="article-text-source">
