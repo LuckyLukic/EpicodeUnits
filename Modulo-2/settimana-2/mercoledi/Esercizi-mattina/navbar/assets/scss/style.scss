@@ -1,0 +1,10 @@
+$colore-sfondo-principale: blue;
+$colore-sfindi-secondario: yellow;
+
+h1 {
+    color: $colore-sfondo-principale;
+}
+
+.row {
+    background-color: $colore-sfindi-secondario ;
+}
