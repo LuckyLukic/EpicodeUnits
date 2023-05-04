@@ -1,0 +1,31 @@
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+    padding: 1rem 8rem;
+    box-sizing: border-box;
+
+    .navbar a {
+        text-decoration: none;
+        color: black;
+        background-color: rgb(123, 122, 150);
+        border-radius: 20px;
+        padding: 0.5rem 1rem;
+        margin: 0 1rem;
+        transition: 0.4s linear 0.1s;
+        color: white;
+        font-size: 1rem;
+
+
+        &:hover {
+            background-color: darkorange;
+            transform: scale(1.1);
+        }
+    }
+}

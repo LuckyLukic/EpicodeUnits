@@ -1,0 +1,150 @@
+section.hero {
+    width: 70%;
+    margin-bottom: 2rem;
+    padding-top: 7rem;
+
+    .hero-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .hero-preview {
+        display: flex;
+
+        .hero-preview-image {
+            width: 80%;
+
+            .hero-preview-img {
+                width: 100%;
+                object-fit: contain;
+                animation: foto 3s backwards;
+            }
+        }
+
+        .hero-preview-buttons {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-right: 1px solid rgb(123, 122, 150);
+            animation: bordo 4s backwards 2s;
+
+            button {
+                background-color: rgb(123, 122, 150);
+                padding: 1rem;
+                margin: 2rem 1rem;
+                border-style: none;
+                border-radius: 10px;
+                color: white;
+                font-size: 1rem;
+                transition: all 0.4s linear 0.1s;
+
+                &:hover {
+                    background-color: darkorange;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+.hero-text {
+    animation: testo1 3s backwards 3s;
+}
+
+.Scopri {
+    animation: bottone 3s backwards 1s;
+}
+
+.Accedi {
+    animation: bottone2 3s backwards 2s;
+}
+
+.Contattaci {
+    animation: bottone3 3s backwards 3s;
+}
+
+@keyframes foto {
+    0% {
+        transform: translate(-150%, 0);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bottone {
+    0% {
+        opacity: 0;
+        transform: translate(0%, -150%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bottone2 {
+    0% {
+        opacity: 0;
+        transform: translate(150%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bottone3 {
+    0% {
+        opacity: 0;
+        transform: translate(0, 150%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes testo {
+    0% {
+        opacity: 0;
+        transform: translate(0, -100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes testo1 {
+    0% {
+        opacity: 0;
+        transform: translate(0, 100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes bordo {
+    0% {
+        opacity: 0;
+        transform: translate(0, -100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

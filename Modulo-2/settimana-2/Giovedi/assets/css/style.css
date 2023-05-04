@@ -1,0 +1,213 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  width: 100%;
+  padding: 1rem 8rem;
+  box-sizing: border-box;
+}
+header .navbar a {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(123, 122, 150);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  transition: 0.4s linear 0.1s;
+  color: white;
+  font-size: 1rem;
+}
+header .navbar a:hover {
+  background-color: darkorange;
+  transform: scale(1.1);
+}
+
+section.hero {
+  width: 70%;
+  margin-bottom: 2rem;
+  padding-top: 7rem;
+}
+section.hero .hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.hero .hero-preview {
+  display: flex;
+}
+section.hero .hero-preview .hero-preview-image {
+  width: 80%;
+}
+section.hero .hero-preview .hero-preview-image .hero-preview-img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  animation: foto 3s backwards;
+}
+section.hero .hero-preview .hero-preview-buttons {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid rgb(123, 122, 150);
+  animation: bordo 4s backwards 2s;
+}
+section.hero .hero-preview .hero-preview-buttons button {
+  background-color: rgb(123, 122, 150);
+  padding: 1rem;
+  margin: 2rem 1rem;
+  border-style: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.4s linear 0.1s;
+}
+section.hero .hero-preview .hero-preview-buttons button:hover {
+  background-color: darkorange;
+  transform: scale(1.1);
+}
+
+.hero-text {
+  animation: testo1 3s backwards 3s;
+}
+
+.Scopri {
+  animation: bottone 3s backwards 1s;
+}
+
+.Accedi {
+  animation: bottone2 3s backwards 2s;
+}
+
+.Contattaci {
+  animation: bottone3 3s backwards 3s;
+}
+
+@keyframes foto {
+  0% {
+    transform: translate(-150%, 0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes bottone {
+  0% {
+    opacity: 0;
+    transform: translate(0%, -150%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes bottone2 {
+  0% {
+    opacity: 0;
+    transform: translate(150%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes bottone3 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 150%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes testo {
+  0% {
+    opacity: 0;
+    transform: translate(0, -100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes testo1 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes bordo {
+  0% {
+    opacity: 0;
+    transform: translate(0, -100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+aside {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+aside section.carousel {
+  width: 70%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+aside section.carousel .carousel-img {
+  width: 20%;
+}
+aside section.carousel .carousel-img .carousel-image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  transition: 0.3s linear 0.1s;
+}
+aside section.carousel .carousel-img .carousel-image:hover {
+  transform: scale(1.1);
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  background-color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  animation: testo 3s backwards 2s;
+}
+
+h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  animation: testo 3s backwards 3s;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
