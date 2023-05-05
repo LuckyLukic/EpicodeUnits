@@ -1,0 +1,24 @@
+#hero {
+
+    padding-left: 10rem;
+
+    .hero-welcome {
+        padding: 2rem;
+
+        .welcome-text {
+            color: #BCA9FF;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .hero-image {
+        overflow: hidden;
+
+        .hero-img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+    }
+
+}
