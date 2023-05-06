@@ -16,9 +16,8 @@
 </head>
 
 <body>
-    <header class="container-fluid px-1 py-2">
+    <header class="container-fluid px-3 py-2">
         <nav class="navbar navbar-expand-lg bg-body-light py-2">
-            <!-- <div class="container-fluid"> -->
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.svg" alt="logo">
             </a>
@@ -96,12 +95,13 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- </div> -->
         </nav>
     </header>
 
+    <!-- MAIN CONTENENTE HERO E GENERAL INFO -->
 
     <main class="container-fluid">
+
         <section id="hero" class="row bg-primary">
             <div class="col-12 col-lg-6 hero-welcome d-flex flex-column justify-content-center">
                 <div class="welcome-text">
@@ -126,8 +126,8 @@
 
         <section id="generalInfo" class="container">
 
-            <div class="row gy-4">
-                <div class="col-12 col-xxl-4 d-flex column-gap-4">
+            <div class="row">
+                <div class="singleInfo col-12 col-lg-6 col-xxl-4 d-flex column-gap-4">
                     <div class="generalInfo-logo d-flex align-items-center justify-content-center rounded-circle">
                         <i class="fa-regular fa-video fa-md" style="color: #d48c25;"></i>
                     </div>
@@ -137,7 +137,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-xxl-4 d-flex column-gap-4">
+                <div class="singleInfo col-12 col-lg-6 col-xxl-4 d-flex column-gap-4">
                     <div class="generalInfo-logo d-flex align-items-center justify-content-center rounded-circle">
                         <i class="fa-regular fa-video fa-md" style="color: #d48c25;"></i>
                     </div>
@@ -147,7 +147,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-xxl-4 d-flex column-gap-4">
+                <div class="singleInfo col-12 col-lg-6 col-xxl-4 d-flex column-gap-4">
                     <div class="generalInfo-logo d-flex align-items-center justify-content-center rounded-circle">
                         <i class="fa-solid fa-person-chalkboard"></i>
                     </div>
@@ -162,10 +162,18 @@
             </div>
         </section>
     </main>
+
+
     <!-- ASIDE CON PRODOTTI -->
+
+
     <aside class="container pt-3">
-        <div class="recommended mb-5">
-            <div class="row mb-4">
+
+        <!--RIGA RECOMMENDED  -->
+
+
+        <div class="rigaProdotti recommended">
+            <div class="row mb-4 suggestion">
                 <h3>Recommended to you</h3>
             </div>
             <div class="row">
@@ -227,8 +235,10 @@
             </div>
         </div>
 
-        <div class="mostPopular mb-5">
-            <div class="row mb-2">
+        <!-- RIGA MOST POPULAR -->
+
+        <div class="rigaProdotti mostPopular">
+            <div class="row suggestion">
                 <h3>Most Popular</h3>
             </div>
             <div class="row">
@@ -291,8 +301,11 @@
 
             </div>
         </div>
-        <div class="trending">
-            <div class="row mb-2">
+
+        <!-- RIGA TRENDING -->
+
+        <div class="rigaProdotti trending">
+            <div class="row suggestion">
                 <h3>Trending</h3>
             </div>
             <div class="row">
