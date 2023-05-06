@@ -83,14 +83,35 @@
                 </ul>
             </div>
 
-            <div class="d-flex align-items-center column-gap-3 ms-auto na">
+            <div class="d-flex align-items-center column-gap-3 ms-auto">
                 <div class="nav-bell align-self-stretch align-items-center justify-content-center
-                    rounded-circle d-flex">
+                    rounded-circle d-flex position-relative">
                     <div class="circle rounded-circle"></div>
                     <i class="fa-regular fa-bell fa-md" style="color:#b1b6be;"></i>
                 </div>
-                <div class="circle2 rounded-circle"></div>
-                <img src="assets/img/avatar-1.jpg" alt="" width="40" class="rounded-circle">
+
+
+                <div class=" dropdown dropstart position-relative">
+                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="circle2 rounded-circle"></div><img src="assets/img/avatar-1.jpg" alt="" width="40"
+                            class="rounded-circle">
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
             </div>
             <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -186,20 +207,24 @@
                     <div class="card h-100">
                         <img src="assets/img/course-angular.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
-                            <p class="card-text"><span><i class="fa-regular fa-clock fa-sm"
-                                        style="color: #abadb0;"></i></span> 2h 40m <span><i
-                                        class="fa-solid fa-sm fa-signal" style="color: #712dd7;"></i></span> Advance
+                            <h5 class="card-title mb-2">GraphQL: introduction to graphQL for beginners</h5>
+                            <p class="card-text mb-3 fs-5 fw-light text-secondary"><span><i
+                                        class="fa-regular fa-clock fa-sm" style="color: #abadb0;"></i></span> 2h 40m
+                                <span class="ms-3"><i class="fa-solid fa-sm fa-signal"
+                                        style="color: #712dd7;"></i></span>
+                                Advance
                             </p>
-                            <p class="card-text"><span><i class="fa-solid fa-star fa-xs"
+                            <p class="card-text mb-3"><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i
                                         class="fa-solid fa-star-half-stroke fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-regular fa-star fa-xs"
-                                        style="color:#ffAA46 ;"></i></span> <span>3.0</span><span>(1,600)</span>
+                                        style="color:#ffAA46 ;"></i></span> <span class="mx-1 fs-5 fw-light"
+                                    style="color:#ffAA46;">3.0</span><span
+                                    class="fs-5 fw-light text-secondary">(1,600)</span>
                             </p>
-                            <p><strong>$500</strong> <s>$700</s> </p>
+                            <p><strong>$500</strong> <s class="fs-5 fw-light text-secondary ms-1">$700</s> </p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <div class="carFooter-user d-flex column-gap-2">
@@ -219,23 +244,27 @@
                 </div>
 
                 <div class="col-6 col-lg-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="assets/img/course-css.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
-                            <p class="card-text"><span><i class="fa-regular fa-clock fa-sm"
-                                        style="color: #abadb0;"></i></span> 2h 40m <span><i
-                                        class="fa-solid fa-sm fa-signal" style="color: #712dd7;"></i></span> Advance
+                            <h5 class="card-title mb-2">GraphQL: introduction to graphQL for beginners</h5>
+                            <p class="card-text mb-3 fs-5 fw-light text-secondary"><span><i
+                                        class="fa-regular fa-clock fa-sm" style="color: #abadb0;"></i></span> 2h 40m
+                                <span class="ms-3"><i class="fa-solid fa-sm fa-signal"
+                                        style="color: #712dd7;"></i></span>
+                                Advance
                             </p>
-                            <p class="card-text"><span><i class="fa-solid fa-star fa-xs"
+                            <p class="card-text mb-3"><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i
                                         class="fa-solid fa-star-half-stroke fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-regular fa-star fa-xs"
-                                        style="color:#ffAA46 ;"></i></span> <span>3.0</span><span>(1,600)</span>
+                                        style="color:#ffAA46 ;"></i></span> <span class="mx-1 fs-5 fw-light"
+                                    style="color:#ffAA46;">3.0</span><span
+                                    class="fs-5 fw-light text-secondary">(1,600)</span>
                             </p>
-                            <p><strong>$500</strong> <s>$700</s> </p>
+                            <p><strong>$500</strong> <s class="fs-5 fw-light text-secondary ms-1">$700</s> </p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <div class="carFooter-user d-flex column-gap-2">
@@ -255,23 +284,27 @@
                 </div>
 
                 <div class=" d-none d-lg-block col-lg-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="assets/img/course-gatsby.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
-                            <p class="card-text"><span><i class="fa-regular fa-clock fa-sm"
-                                        style="color: #abadb0;"></i></span> 2h 40m <span><i
-                                        class="fa-solid fa-sm fa-signal" style="color: #712dd7;"></i></span> Advance
+                            <h5 class="card-title mb-2">GraphQL: introduction to graphQL for beginners</h5>
+                            <p class="card-text mb-3 fs-5 fw-light text-secondary"><span><i
+                                        class="fa-regular fa-clock fa-sm" style="color: #abadb0;"></i></span> 2h 40m
+                                <span class="ms-3"><i class="fa-solid fa-sm fa-signal"
+                                        style="color: #712dd7;"></i></span>
+                                Advance
                             </p>
-                            <p class="card-text"><span><i class="fa-solid fa-star fa-xs"
+                            <p class="card-text mb-3"><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i
                                         class="fa-solid fa-star-half-stroke fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-regular fa-star fa-xs"
-                                        style="color:#ffAA46 ;"></i></span> <span>3.0</span><span>(1,600)</span>
+                                        style="color:#ffAA46 ;"></i></span> <span class="mx-1 fs-5 fw-light"
+                                    style="color:#ffAA46;">3.0</span><span
+                                    class="fs-5 fw-light text-secondary">(1,600)</span>
                             </p>
-                            <p><strong>$500</strong> <s>$700</s> </p>
+                            <p><strong>$500</strong> <s class="fs-5 fw-light text-secondary ms-1">$700</s> </p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <div class="carFooter-user d-flex column-gap-2">
@@ -291,23 +324,27 @@
                 </div>
 
                 <div class="d-none d-lg-block col-lg-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="assets/img/course-graphql.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
-                            <p class="card-text"><span><i class="fa-regular fa-clock fa-sm"
-                                        style="color: #abadb0;"></i></span> 2h 40m <span><i
-                                        class="fa-solid fa-sm fa-signal" style="color: #712dd7;"></i></span> Advance
+                            <h5 class="card-title mb-2">GraphQL: introduction to graphQL for beginners</h5>
+                            <p class="card-text mb-3 fs-5 fw-light text-secondary"><span><i
+                                        class="fa-regular fa-clock fa-sm" style="color: #abadb0;"></i></span> 2h 40m
+                                <span class="ms-3"><i class="fa-solid fa-sm fa-signal"
+                                        style="color: #712dd7;"></i></span>
+                                Advance
                             </p>
-                            <p class="card-text"><span><i class="fa-solid fa-star fa-xs"
+                            <p class="card-text mb-3"><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i
                                         class="fa-solid fa-star-half-stroke fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-regular fa-star fa-xs"
-                                        style="color:#ffAA46 ;"></i></span> <span>3.0</span><span>(1,600)</span>
+                                        style="color:#ffAA46 ;"></i></span> <span class="mx-1 fs-5 fw-light"
+                                    style="color:#ffAA46;">3.0</span><span
+                                    class="fs-5 fw-light text-secondary">(1,600)</span>
                             </p>
-                            <p><strong>$500</strong> <s>$700</s> </p>
+                            <p><strong>$500</strong> <s class="fs-5 fw-light text-secondary ms-1">$700</s> </p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <div class="carFooter-user d-flex column-gap-2">
@@ -337,23 +374,27 @@
             <div class="row">
 
                 <div class="col-6 col-lg-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="assets/img/course-html.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
-                            <p class="card-text"><span><i class="fa-regular fa-clock fa-sm"
-                                        style="color: #abadb0;"></i></span> 2h 40m <span><i
-                                        class="fa-solid fa-sm fa-signal" style="color: #712dd7;"></i></span> Advance
+                            <h5 class="card-title mb-2">GraphQL: introduction to graphQL for beginners</h5>
+                            <p class="card-text mb-3 fs-5 fw-light text-secondary"><span><i
+                                        class="fa-regular fa-clock fa-sm" style="color: #abadb0;"></i></span> 2h 40m
+                                <span class="ms-3"><i class="fa-solid fa-sm fa-signal"
+                                        style="color: #712dd7;"></i></span>
+                                Advance
                             </p>
-                            <p class="card-text"><span><i class="fa-solid fa-star fa-xs"
+                            <p class="card-text mb-3"><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i
                                         class="fa-solid fa-star-half-stroke fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-regular fa-star fa-xs"
-                                        style="color:#ffAA46 ;"></i></span> <span>3.0</span><span>(1,600)</span>
+                                        style="color:#ffAA46 ;"></i></span> <span class="mx-1 fs-5 fw-light"
+                                    style="color:#ffAA46;">3.0</span><span
+                                    class="fs-5 fw-light text-secondary">(1,600)</span>
                             </p>
-                            <p><strong>$500</strong> <s>$700</s> </p>
+                            <p><strong>$500</strong> <s class="fs-5 fw-light text-secondary ms-1">$700</s> </p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <div class="carFooter-user d-flex column-gap-2">
@@ -373,23 +414,27 @@
                 </div>
 
                 <div class="col-6 col-lg-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="assets/img/course-javascript.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
-                            <p class="card-text"><span><i class="fa-regular fa-clock fa-sm"
-                                        style="color: #abadb0;"></i></span> 2h 40m <span><i
-                                        class="fa-solid fa-sm fa-signal" style="color: #712dd7;"></i></span> Advance
+                            <h5 class="card-title mb-2">GraphQL: introduction to graphQL for beginners</h5>
+                            <p class="card-text mb-3 fs-5 fw-light text-secondary"><span><i
+                                        class="fa-regular fa-clock fa-sm" style="color: #abadb0;"></i></span> 2h 40m
+                                <span class="ms-3"><i class="fa-solid fa-sm fa-signal"
+                                        style="color: #712dd7;"></i></span>
+                                Advance
                             </p>
-                            <p class="card-text"><span><i class="fa-solid fa-star fa-xs"
+                            <p class="card-text mb-3"><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i
                                         class="fa-solid fa-star-half-stroke fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-regular fa-star fa-xs"
-                                        style="color:#ffAA46 ;"></i></span> <span>3.0</span><span>(1,600)</span>
+                                        style="color:#ffAA46 ;"></i></span> <span class="mx-1 fs-5 fw-light"
+                                    style="color:#ffAA46;">3.0</span><span
+                                    class="fs-5 fw-light text-secondary">(1,600)</span>
                             </p>
-                            <p><strong>$500</strong> <s>$700</s> </p>
+                            <p><strong>$500</strong> <s class="fs-5 fw-light text-secondary ms-1">$700</s> </p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <div class="carFooter-user d-flex column-gap-2">
@@ -409,23 +454,27 @@
                 </div>
 
                 <div class=" d-none d-lg-block col-lg-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="assets/img/course-laravel.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
-                            <p class="card-text"><span><i class="fa-regular fa-clock fa-sm"
-                                        style="color: #abadb0;"></i></span> 2h 40m <span><i
-                                        class="fa-solid fa-sm fa-signal" style="color: #712dd7;"></i></span> Advance
+                            <h5 class="card-title mb-2">GraphQL: introduction to graphQL for beginners</h5>
+                            <p class="card-text mb-3 fs-5 fw-light text-secondary"><span><i
+                                        class="fa-regular fa-clock fa-sm" style="color: #abadb0;"></i></span> 2h 40m
+                                <span class="ms-3"><i class="fa-solid fa-sm fa-signal"
+                                        style="color: #712dd7;"></i></span>
+                                Advance
                             </p>
-                            <p class="card-text"><span><i class="fa-solid fa-star fa-xs"
+                            <p class="card-text mb-3"><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i
                                         class="fa-solid fa-star-half-stroke fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-regular fa-star fa-xs"
-                                        style="color:#ffAA46 ;"></i></span> <span>3.0</span><span>(1,600)</span>
+                                        style="color:#ffAA46 ;"></i></span> <span class="mx-1 fs-5 fw-light"
+                                    style="color:#ffAA46;">3.0</span><span
+                                    class="fs-5 fw-light text-secondary">(1,600)</span>
                             </p>
-                            <p><strong>$500</strong> <s>$700</s> </p>
+                            <p><strong>$500</strong> <s class="fs-5 fw-light text-secondary ms-1">$700</s> </p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <div class="carFooter-user d-flex column-gap-2">
@@ -445,23 +494,27 @@
                 </div>
 
                 <div class="d-none d-lg-block col-lg-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="assets/img/course-node.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
-                            <p class="card-text"><span><i class="fa-regular fa-clock fa-sm"
-                                        style="color: #abadb0;"></i></span> 2h 40m <span><i
-                                        class="fa-solid fa-sm fa-signal" style="color: #712dd7;"></i></span> Advance
+                            <h5 class="card-title mb-2">GraphQL: introduction to graphQL for beginners</h5>
+                            <p class="card-text mb-3 fs-5 fw-light text-secondary"><span><i
+                                        class="fa-regular fa-clock fa-sm" style="color: #abadb0;"></i></span> 2h 40m
+                                <span class="ms-3"><i class="fa-solid fa-sm fa-signal"
+                                        style="color: #712dd7;"></i></span>
+                                Advance
                             </p>
-                            <p class="card-text"><span><i class="fa-solid fa-star fa-xs"
+                            <p class="card-text mb-3"><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i
                                         class="fa-solid fa-star-half-stroke fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-regular fa-star fa-xs"
-                                        style="color:#ffAA46 ;"></i></span> <span>3.0</span><span>(1,600)</span>
+                                        style="color:#ffAA46 ;"></i></span> <span class="mx-1 fs-5 fw-light"
+                                    style="color:#ffAA46;">3.0</span><span
+                                    class="fs-5 fw-light text-secondary">(1,600)</span>
                             </p>
-                            <p><strong>$500</strong> <s>$700</s> </p>
+                            <p><strong>$500</strong> <s class="fs-5 fw-light text-secondary ms-1">$700</s> </p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <div class="carFooter-user d-flex column-gap-2">
@@ -492,23 +545,27 @@
             <div class="row">
 
                 <div class="col-6 col-lg-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="assets/img/course-python.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
-                            <p class="card-text"><span><i class="fa-regular fa-clock fa-sm"
-                                        style="color: #abadb0;"></i></span> 2h 40m <span><i
-                                        class="fa-solid fa-sm fa-signal" style="color: #712dd7;"></i></span> Advance
+                            <h5 class="card-title mb-2">GraphQL: introduction to graphQL for beginners</h5>
+                            <p class="card-text mb-3 fs-5 fw-light text-secondary"><span><i
+                                        class="fa-regular fa-clock fa-sm" style="color: #abadb0;"></i></span> 2h 40m
+                                <span class="ms-3"><i class="fa-solid fa-sm fa-signal"
+                                        style="color: #712dd7;"></i></span>
+                                Advance
                             </p>
-                            <p class="card-text"><span><i class="fa-solid fa-star fa-xs"
+                            <p class="card-text mb-3"><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i
                                         class="fa-solid fa-star-half-stroke fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-regular fa-star fa-xs"
-                                        style="color:#ffAA46 ;"></i></span> <span>3.0</span><span>(1,600)</span>
+                                        style="color:#ffAA46 ;"></i></span> <span class="mx-1 fs-5 fw-light"
+                                    style="color:#ffAA46;">3.0</span><span
+                                    class="fs-5 fw-light text-secondary">(1,600)</span>
                             </p>
-                            <p><strong>$500</strong> <s>$700</s> </p>
+                            <p><strong>$500</strong> <s class="fs-5 fw-light text-secondary ms-1">$700</s> </p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <div class="carFooter-user d-flex column-gap-2">
@@ -528,23 +585,27 @@
                 </div>
 
                 <div class="col-6 col-lg-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="assets/img/course-react.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
-                            <p class="card-text"><span><i class="fa-regular fa-clock fa-sm"
-                                        style="color: #abadb0;"></i></span> 2h 40m <span><i
-                                        class="fa-solid fa-sm fa-signal" style="color: #712dd7;"></i></span> Advance
+                            <h5 class="card-title mb-2">GraphQL: introduction to graphQL for beginners</h5>
+                            <p class="card-text mb-3 fs-5 fw-light text-secondary"><span><i
+                                        class="fa-regular fa-clock fa-sm" style="color: #abadb0;"></i></span> 2h 40m
+                                <span class="ms-3"><i class="fa-solid fa-sm fa-signal"
+                                        style="color: #712dd7;"></i></span>
+                                Advance
                             </p>
-                            <p class="card-text"><span><i class="fa-solid fa-star fa-xs"
+                            <p class="card-text mb-3"><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i
                                         class="fa-solid fa-star-half-stroke fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-regular fa-star fa-xs"
-                                        style="color:#ffAA46 ;"></i></span> <span>3.0</span><span>(1,600)</span>
+                                        style="color:#ffAA46 ;"></i></span> <span class="mx-1 fs-5 fw-light"
+                                    style="color:#ffAA46;">3.0</span><span
+                                    class="fs-5 fw-light text-secondary">(1,600)</span>
                             </p>
-                            <p><strong>$500</strong> <s>$700</s> </p>
+                            <p><strong>$500</strong> <s class="fs-5 fw-light text-secondary ms-1">$700</s> </p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <div class="carFooter-user d-flex column-gap-2">
@@ -564,23 +625,27 @@
                 </div>
 
                 <div class=" d-none d-lg-block col-lg-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="assets/img/course-wordpress.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
-                            <p class="card-text"><span><i class="fa-regular fa-clock fa-sm"
-                                        style="color: #abadb0;"></i></span> 2h 40m <span><i
-                                        class="fa-solid fa-sm fa-signal" style="color: #712dd7;"></i></span> Advance
+                            <h5 class="card-title mb-2">GraphQL: introduction to graphQL for beginners</h5>
+                            <p class="card-text mb-3 fs-5 fw-light text-secondary"><span><i
+                                        class="fa-regular fa-clock fa-sm" style="color: #abadb0;"></i></span> 2h 40m
+                                <span class="ms-3"><i class="fa-solid fa-sm fa-signal"
+                                        style="color: #712dd7;"></i></span>
+                                Advance
                             </p>
-                            <p class="card-text"><span><i class="fa-solid fa-star fa-xs"
+                            <p class="card-text mb-3"><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i
                                         class="fa-solid fa-star-half-stroke fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-regular fa-star fa-xs"
-                                        style="color:#ffAA46 ;"></i></span> <span>3.0</span><span>(1,600)</span>
+                                        style="color:#ffAA46 ;"></i></span> <span class="mx-1 fs-5 fw-light"
+                                    style="color:#ffAA46;">3.0</span><span
+                                    class="fs-5 fw-light text-secondary">(1,600)</span>
                             </p>
-                            <p><strong>$500</strong> <s>$700</s> </p>
+                            <p><strong>$500</strong> <s class="fs-5 fw-light text-secondary ms-1">$700</s> </p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <div class="carFooter-user d-flex column-gap-2">
@@ -600,23 +665,27 @@
                 </div>
 
                 <div class="d-none d-lg-block col-lg-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="assets/img/course-angular.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
-                            <p class="card-text"><span><i class="fa-regular fa-clock fa-sm"
-                                        style="color: #abadb0;"></i></span> 2h 40m <span><i
-                                        class="fa-solid fa-sm fa-signal" style="color: #712dd7;"></i></span> Advance
+                            <h5 class="card-title mb-2">GraphQL: introduction to graphQL for beginners</h5>
+                            <p class="card-text mb-3 fs-5 fw-light text-secondary"><span><i
+                                        class="fa-regular fa-clock fa-sm" style="color: #abadb0;"></i></span> 2h 40m
+                                <span class="ms-3"><i class="fa-solid fa-sm fa-signal"
+                                        style="color: #712dd7;"></i></span>
+                                Advance
                             </p>
-                            <p class="card-text"><span><i class="fa-solid fa-star fa-xs"
+                            <p class="card-text mb-3"><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-solid fa-star fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i
                                         class="fa-solid fa-star-half-stroke fa-xs"
                                         style="color:#ffAA46 ;"></i></span><span><i class="fa-regular fa-star fa-xs"
-                                        style="color:#ffAA46 ;"></i></span> <span>3.0</span><span>(1,600)</span>
+                                        style="color:#ffAA46 ;"></i></span> <span class="mx-1 fs-5 fw-light"
+                                    style="color:#ffAA46;">3.0</span><span
+                                    class="fs-5 fw-light text-secondary">(1,600)</span>
                             </p>
-                            <p><strong>$500</strong> <s>$700</s> </p>
+                            <p><strong>$500</strong> <s class="fs-5 fw-light text-secondary ms-1">$700</s> </p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <div class="carFooter-user d-flex column-gap-2">
@@ -655,7 +724,9 @@
 
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>

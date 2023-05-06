@@ -1,13 +1,9 @@
-@import"./partials.scss/colori";
+@import"./partials.scss/header";
 @import"./partials.scss/hero";
+@import"./partials.scss/generalInfo";
+@import"./partials.scss/aside";
+@import"./partials.scss/footer";
 
-body,
-html,
-section,
-div {
-    margin: 0;
-    padding: 0;
-}
 
 body {
     background-color: #F5F4F9;
@@ -24,88 +20,13 @@ p {
     font-size: 1.5rem;
 }
 
-header {
-    background-color: white;
-}
-
-.nav-bell {
-    width: 40px;
-    background-color: #F5F4F9;
-}
-
-.nav-bell .circle {
-    background-color: #5C5777;
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    border: 3px solid white;
-    top: 10px;
-    right: 58px;
-}
-
-.circle2 {
-    background-color: #19CB98;
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    border: 3px solid white;
-    top: 40px;
-    right: 1px;
-}
-
-#generalInfo {
-    background-color: white;
-    padding: 3rem 0 1.5rem;
-    border-bottom: 1px solid rgb(203, 201, 201);
-}
-
-#generalInfo .singleInfo {
-    margin-bottom: 1.5rem;
-}
-
-.generalInfo-logo {
-    width: 60px;
-    background-color: #FFEEDA;
-}
-
-aside {
-    padding-top: 5rem;
-}
-
-aside .suggestion {
-    margin-bottom: 2rem;
-}
-
-aside .rigaProdotti {
-    margin-bottom: 6rem;
-}
-
-aside .trending {
-    border-bottom: 1px solid rgba(235, 228, 228, 0.726);
-    padding-bottom: 7rem;
-    margin-bottom: 1rem;
-}
-
 .card-footer {
     background-color: white;
 }
 
-.footer-container {
-    color: #5C5777;
-    padding-bottom: 1rem;
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.9rem;
-    font-weight: 300;
-    letter-spacing: 0.1rem;
-}
 
-footer a {
-    text-decoration: none;
-    color: #5C5777;
-    font-size: 1.5rem;
-    margin-left: 1rem;
-}
+// MEDIA QUERIES
+
 
 @media screen and (max-width:1600px) {
     #hero .hero-welcome {

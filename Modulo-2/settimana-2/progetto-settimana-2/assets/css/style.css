@@ -1,13 +1,31 @@
-.bg-primary {
-  background-color: #7650FF !important;
+header {
+  background-color: white;
 }
 
-.text-light {
-  color: rgba(188, 169, 255, 0.9) !important;
+.nav-bell {
+  width: 40px;
+  background-color: #F5F4F9;
+  position: relative;
 }
 
-.btn-success {
-  background-color: #19CB98 !important;
+.nav-bell .circle {
+  background-color: #5C5777;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  border: 3px solid white;
+  top: 0;
+  right: 1px;
+}
+
+.circle2 {
+  background-color: #19CB98;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  border: 3px solid white;
+  top: 30px;
+  right: 1px;
 }
 
 #hero .hero-welcome {
@@ -24,58 +42,6 @@
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-}
-
-body,
-html,
-section,
-div {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #F5F4F9;
-}
-
-p,
-h3,
-h4 {
-  margin: 0;
-}
-
-p {
-  line-height: 2rem;
-  font-size: 1.5rem;
-}
-
-header {
-  background-color: white;
-}
-
-.nav-bell {
-  width: 40px;
-  background-color: #F5F4F9;
-}
-
-.nav-bell .circle {
-  background-color: #5C5777;
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  border: 3px solid white;
-  top: 10px;
-  right: 58px;
-}
-
-.circle2 {
-  background-color: #19CB98;
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  border: 3px solid white;
-  top: 40px;
-  right: 1px;
 }
 
 #generalInfo {
@@ -96,23 +62,16 @@ header {
 aside {
   padding-top: 5rem;
 }
-
 aside .suggestion {
   margin-bottom: 2rem;
 }
-
 aside .rigaProdotti {
   margin-bottom: 6rem;
 }
-
 aside .trending {
   border-bottom: 1px solid rgba(235, 228, 228, 0.726);
   padding-bottom: 7rem;
   margin-bottom: 1rem;
-}
-
-.card-footer {
-  background-color: white;
 }
 
 .footer-container {
@@ -124,12 +83,30 @@ aside .trending {
   font-weight: 300;
   letter-spacing: 0.1rem;
 }
-
-footer a {
+.footer-container .footer-links a {
   text-decoration: none;
   color: #5C5777;
   font-size: 1.5rem;
   margin-left: 1rem;
+}
+
+body {
+  background-color: #F5F4F9;
+}
+
+p,
+h3,
+h4 {
+  margin: 0;
+}
+
+p {
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+.card-footer {
+  background-color: white;
 }
 
 @media screen and (max-width: 1600px) {
