@@ -1,25 +1,18 @@
-#hero {
+.hero-welcome {
+    padding: 2rem 2rem 2rem 8rem;
 
-    // padding-left: 10rem;
-
-
-    .hero-welcome {
-        padding: 2rem 2rem 2rem 8rem;
-
-        .welcome-text {
-            color: #BCA9FF;
-            margin-bottom: 1rem;
-        }
+    .welcome-text {
+        color: #BCA9FF;
+        margin-bottom: 1rem;
     }
+}
 
-    .hero-image {
-        overflow: hidden;
+.hero-image {
+    overflow: hidden;
 
-        .hero-img {
-            object-fit: cover;
-            width: 100%;
-        }
-
+    .hero-img {
+        object-fit: cover;
+        width: 100%;
     }
 
 }

@@ -1,0 +1,16 @@
+$heroBackground : #7650FF;
+$h1Color : #FFFFFF;
+$heroParagraph : #BCA9FF;
+$heroButton1 : #19CB98;
+
+.bg-primary {
+    background-color: $heroBackground !important;
+}
+
+.text-light {
+    color: heroParagraph !important;
+}
+
+.btn-success {
+    background-color: $heroButton1;
+}

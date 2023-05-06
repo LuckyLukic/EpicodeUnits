@@ -1,3 +1,15 @@
+.bg-primary {
+  background-color: #7650FF !important;
+}
+
+.text-light {
+  color: heroParagraph !important;
+}
+
+.btn-success {
+  background-color: #19CB98;
+}
+
 header {
   background-color: white;
 }
@@ -28,17 +40,18 @@ header {
   right: 1px;
 }
 
-#hero .hero-welcome {
+.hero-welcome {
   padding: 2rem 2rem 2rem 8rem;
 }
-#hero .hero-welcome .welcome-text {
+.hero-welcome .welcome-text {
   color: #BCA9FF;
   margin-bottom: 1rem;
 }
-#hero .hero-image {
+
+.hero-image {
   overflow: hidden;
 }
-#hero .hero-image .hero-img {
+.hero-image .hero-img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
