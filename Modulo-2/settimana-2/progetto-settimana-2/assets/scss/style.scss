@@ -24,13 +24,39 @@ p {
     font-size: 1.5rem;
 }
 
+header {
+    background-color: white;
+}
+
 .nav-bell {
     width: 40px;
+    background-color: #F5F4F9;
+}
+
+.nav-bell .circle {
+    background-color: #5C5777;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border: 3px solid white;
+    top: 10px;
+    right: 58px;
+}
+
+.circle2 {
+    background-color: #19CB98;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border: 3px solid white;
+    top: 40px;
+    right: 1px;
 }
 
 #generalInfo {
-    margin-bottom: 1.5rem;
-
+    background-color: white;
+    padding: 3rem 0 1.5rem;
+    border-bottom: 1px solid rgb(203, 201, 201);
 }
 
 #generalInfo .singleInfo {
@@ -43,7 +69,7 @@ p {
 }
 
 aside {
-    background-color: #F5F4F9;
+    padding-top: 5rem;
 }
 
 aside .suggestion {
@@ -71,20 +97,19 @@ footer a {
 }
 
 @media screen and (max-width:1600px) {
-    #hero {
+    #hero .hero-welcome {
         padding-left: 6rem;
     }
 }
 
 @media screen and (max-width: 992px) {
-    #hero {
-        padding: 0;
+    #hero .hero-welcome {
+        padding: 2rem;
 
         h1 {
             font-size: 3.5rem;
 
         }
-
 
         .btn {
             font-size: 1.3rem;

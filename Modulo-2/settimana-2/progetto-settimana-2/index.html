@@ -83,11 +83,13 @@
                 </ul>
             </div>
 
-            <div class="d-flex align-items-center column-gap-3 ms-auto">
-                <div
-                    class="bg-secondary nav-bell align-self-stretch align-items-center justify-content-center rounded-circle d-flex">
-                    <i class="fa-regular fa-bell fa-md" style="color: #c4cad4;"></i>
+            <div class="d-flex align-items-center column-gap-3 ms-auto na">
+                <div class="nav-bell align-self-stretch align-items-center justify-content-center
+                    rounded-circle d-flex">
+                    <div class="circle rounded-circle"></div>
+                    <i class="fa-regular fa-bell fa-md" style="color:#b1b6be;"></i>
                 </div>
+                <div class="circle2 rounded-circle"></div>
                 <img src="assets/img/avatar-1.jpg" alt="" width="40" class="rounded-5">
             </div>
             <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse"
@@ -100,65 +102,68 @@
 
     <!-- MAIN CONTENENTE HERO E GENERAL INFO -->
 
-    <main class="container-fluid">
+    <!-- <main class="container-fluid"> -->
+    <main>
 
-        <section id="hero" class="row bg-primary">
-            <div class="col-12 col-lg-6 hero-welcome d-flex flex-column justify-content-center">
-                <div class="welcome-text">
-                    <h1 class="text-white">Welcome Web Students!</h1>
-                    <p class="text-light">Hand-picked Instructor and expertly crafted courses, designed for the modern
-                        students and
-                        entrepreneur</p>
+        <section id="hero" class="container-fluid">
+            <div class="wrapper row bg-primary">
+                <div class="col-12 col-lg-6 hero-welcome d-flex flex-column justify-content-center">
+                    <div class="welcome-text">
+                        <h1 class="text-white">Welcome Web Students!</h1>
+                        <p class="text-light">Hand-picked Instructor and expertly crafted courses, designed for the
+                            modern
+                            students and
+                            entrepreneur</p>
+                    </div>
+                    <div class="d-flex column-gap-2">
+                        <button type="button" class="btn btn-success text-white">Browse Course</button>
+                        <button type="button" class="btn btn-light text-black">Are you instructor?</button>
+                    </div>
                 </div>
-                <div class="d-flex column-gap-2">
-                    <button type="button" class="btn btn-success text-white">Browse Course</button>
-                    <button type="button" class="btn btn-light text-black">Are you instructor?</button>
+
+                <div class="col-12 col-lg-6 hero-image">
+                    <img src="assets/img/hero-img.png" alt="hero-img">
                 </div>
             </div>
-
-            <div class="col-12 col-lg-6 hero-image">
-                <img src="assets/img/hero-img.png" alt="hero-img">
 
         </section>
 
 
 
 
-        <section id="generalInfo" class="container">
-
-            <div class="row">
-                <div class="singleInfo col-12 col-lg-6 col-xxl-4 d-flex column-gap-4">
-                    <div class="generalInfo-logo d-flex align-items-center justify-content-center rounded-circle">
-                        <i class="fa-regular fa-video fa-md" style="color: #d48c25;"></i>
+        <section id="generalInfo" class="container-fluid">
+            <div class="container wrapper">
+                <div class="row wrapper-row">
+                    <div class="singleInfo col-12 col-lg-6 col-xxl-4 d-flex column-gap-4">
+                        <div class="generalInfo-logo d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fa-solid fa-book" style="color: #d1981f;"></i>
+                        </div>
+                        <div class="text d-flex flex-column justify-content-center">
+                            <h4>30,000 online courses</h4>
+                            <p>Enjoy a variety of fresh topics</p>
+                        </div>
                     </div>
-                    <div class="text d-flex flex-column justify-content-center">
-                        <h4>30,000 online courses</h4>
-                        <p>Enjoy a variety of fresh topics</p>
+
+                    <div class="singleInfo col-12 col-lg-6 col-xxl-4 d-flex column-gap-4">
+                        <div class="generalInfo-logo d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fa-solid fa-person-chalkboard" style="color: #d1981f;"></i>
+                        </div>
+                        <div class="text d-flex flex-column justify-content-center">
+                            <h4>Expert instruction</h4>
+                            <p>Find the right instructor for you</p>
+                        </div>
+                    </div>
+
+                    <div class="singleInfo col-12 col-lg-6 col-xxl-4 d-flex column-gap-4">
+                        <div class="generalInfo-logo d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fa-regular fa-keyboard" style="color: #d1981f;"></i>
+                        </div>
+                        <div class="text d-flex flex-column justify-content-center">
+                            <h4>Lifetime access</h4>
+                            <p>Learn on your schedule</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="singleInfo col-12 col-lg-6 col-xxl-4 d-flex column-gap-4">
-                    <div class="generalInfo-logo d-flex align-items-center justify-content-center rounded-circle">
-                        <i class="fa-regular fa-video fa-md" style="color: #d48c25;"></i>
-                    </div>
-                    <div class="text d-flex flex-column justify-content-center">
-                        <h4>Expert instruction</h4>
-                        <p>Find the right instructor for you</p>
-                    </div>
-                </div>
-
-                <div class="singleInfo col-12 col-lg-6 col-xxl-4 d-flex column-gap-4">
-                    <div class="generalInfo-logo d-flex align-items-center justify-content-center rounded-circle">
-                        <i class="fa-solid fa-person-chalkboard"></i>
-                    </div>
-                    <div class="text d-flex flex-column justify-content-center">
-                        <h4>Lifetime access</h4>
-                        <p>Learn on your schedule</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4"></div>
-                <div class="col-lg-4"></div>
             </div>
         </section>
     </main>
@@ -167,7 +172,7 @@
     <!-- ASIDE CON PRODOTTI -->
 
 
-    <aside class="container pt-3">
+    <aside class="container">
 
         <!--RIGA RECOMMENDED  -->
 
