@@ -46,14 +46,13 @@ const formPet = document.getElementById("petName");
 const formOwner = document.getElementById("ownerName");
 const formSpecies = document.getElementById("species");
 const formBreed = document.getElementById("breed");
-const inputFields = document.querySelectorAll(".data input");
 const submit = document.getElementById("submit");
 const form = document.getElementById("form");
 const newPet = new CardAnimale();
 
 submit.addEventListener("click", (evt) => {
   evt.preventDefault();
-  console.log(evt);
+  // console.log(evt);
 
   const card = new PetCard(
     formPet.value,
