@@ -59,8 +59,6 @@ async function newProduct() {
     const productBrand = document.querySelector(".product-brand").value;
     const productImage = document.querySelector(".product-image").value;
     const productPrice = document.querySelector(".product-price").value;
-    const saveModal = document.getElementById("saveModal")
-
 
     const productTemplate = {
         name: productName, //REQUIRED
@@ -85,12 +83,7 @@ async function newProduct() {
             throw new Error("no product sent into database");
         }
 
-        saveModal.classList.toggle = ("fade")
-
-        setTimeout(() => {
-            saveModal.classList.toggle = ("fade")
-
-        }, 1500);
+        alert("nuovo prodotto creato")
 
     } catch (error) {
         console.error(error.message);
@@ -117,7 +110,6 @@ async function updateProduct() {
         price: productPrice, //REQUIRED
     };
 
-
     try {
         const updatedItem = await fetch(`${url}${urlId}`, {
             method: "PUT",
@@ -132,6 +124,9 @@ async function updateProduct() {
         if (!updatedItem.ok) {
             throw new Error("no product sent to database");
         }
+
+        alert("prodotto aggiornato")
+
     } catch (error) {
         console.error(error.message);
     }
@@ -153,6 +148,8 @@ async function deleteProduct() {
         if (!updatedItem.ok) {
             throw new Error("no product sent to database");
         }
+
+        alert("prodotto cancellato")
 
     } catch (error) {
         console.error(error.message);
