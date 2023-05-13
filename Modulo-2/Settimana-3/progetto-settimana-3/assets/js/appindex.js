@@ -45,14 +45,16 @@ const population = () => {
         riga.innerHTML += `<div class="card-container col-6 col-md-4 col-lg-3">
         <div class="card h-100">
         <img src="${i.imageUrl}" class="card-img-top" alt="card-image ">
-        <div class="card-body">
+        <div class="card-body d-flex flex-column">
           <h5> NAME:${i.name}</h5>
           <h5> PRICE: $ ${i.price} </h5>
           <p >BRAND: ${i.brand}</p>
           <p >DESCRIPTION:${i.description}</p>
+          <div class="mt-auto">
           <div class="cardButtons-container d-flex justify-content-between" >
           <a href="form.html?id=${i._id} " class="btn btn-primary btn-modifica">MODIFICA</a>
           <a href="detail.html?id=${i._id} " class="btn btn-primary btn-modifica">DETAGLIO</a>
+          </div>
           </div>
         </div >
       </div >
