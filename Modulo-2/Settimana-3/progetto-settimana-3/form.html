@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <title>Form prodotto</title>
+  </head>
+  <body>
+    <main class="container-fluid py-5">
+      <section class="container py-5">
+        <form action="#" class="product-form w-50">
+          <legend>SCHEDA PRODOTTO</legend>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Product Name</label
+            >
+            <input
+              type="text"
+              class="form-control product-name"
+              id="exampleFormControlInput1"
+              placeholder="product name"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Description</label
+            >
+            <textarea
+              class="form-control product-description"
+              id="exampleFormControlTextarea1"
+              rows="2"
+              min-lenght="20"
+              placeholder="min 20 characters"
+              required
+            ></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Brand</label
+            >
+            <input
+              type="text"
+              class="form-control product-brand"
+              id="exampleFormControlInput1"
+              placeholder="brand name"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="basic-url" class="form-label">Product Picture</label>
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon3"
+                >https://example.com/users/</span
+              >
+              <input
+                type="text"
+                class="form-control product-image"
+                id="basic-url"
+                aria-describedby="basic-addon3 basic-addon4"
+              />
+            </div>
+            <div class="form-text" id="basic-addon4">
+              Example help text goes outside the input group.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Price</label
+            >
+            <input
+              type="number"
+              class="form-control product-price"
+              id="exampleFormControlInput1"
+              placeholder="price"
+              required
+            />
+          </div>
+          <div class="button-wrapper d-flex justify-content-center mb-3">
+            <button class="btn btn-primary create-button mx-3 px-4">
+              CREATE
+            </button>
+            <button class="btn btn-secondary update-button mx-3 px-4">
+              UPDATE
+            </button>
+            <button
+              class="btn btn-danger delete-button mx-3 px-4"
+              data-bs-toggle="modal"
+              data-bs-target="#delete"
+            >
+              DELETE
+            </button>
+            <button
+              class="btn btn-success erase-button mx-3 px-4"
+              data-bs-toggle="modal"
+              data-bs-target="#reset"
+            >
+              RESET
+            </button>
+
+            <!-- MODALS -->
+
+            <!-- RESET MODAL -->
+            <div
+              class="modal fade"
+              id="reset"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">RESET</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">are you sure to reset the form?</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      NO
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary reset-modal"
+                      data-bs-dismiss="modal"
+                    >
+                      YES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--DELETE MODAL -->
+
+            <div
+              class="modal fade"
+              id="delete"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">RESET</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    are you sure to delete this product)
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      NO
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary delete-modal"
+                      data-bs-dismiss="modal"
+                    >
+                      YES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <a href="index.html" class="btn btn-warning">TORNA AL CATALOGO</a>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/appform.js"></script>
+  </body>
+</html>
