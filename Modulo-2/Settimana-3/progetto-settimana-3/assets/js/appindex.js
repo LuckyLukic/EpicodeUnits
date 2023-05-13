@@ -1,4 +1,5 @@
-//Costanti
+//DICHIARAZIONE VARIABILI
+
 const createButton = document.querySelector(".create-button");
 const updateButton = document.querySelector(".update-button");
 const form = document.querySelector(".product-form");
@@ -6,8 +7,7 @@ const productArray = [];
 const riga = document.querySelector(".product-row");
 const modificaButton = document.querySelector(".btn-modifica");
 
-
-
+// FUNZIONE GET PER AVERE IL L'INTERO DATABASE
 
 async function retrieveDatabase() {
     const url = "https://striveschool-api.herokuapp.com/api/product";
@@ -27,15 +27,17 @@ async function retrieveDatabase() {
 
         const updateDatabase = await newRequest.json();
 
+        // POPOLO UN ARRAY PER UTILIZZARLO COME DATABASE INTERNO (AVREI POTUTO UTILIZZARE IL JSON DIRETTAMENTE E POPOLARE ALL'INTERNO DI QUESTA STESSA FUNZIONE)
+
         productArray.push(...updateDatabase);
 
-        sessionStorage.setItem("dataUpdate", JSON.stringify(productArray));
     } catch (error) {
         console.log(error.message);
     }
 }
 
 
+// FUNZIONE PER GENERARE LE CARDS
 
 const population = () => {
     riga.innerHTML = "";
@@ -58,9 +60,7 @@ const population = () => {
     }
 };
 
-
-
-
+// FUNZIONE ASINCRONA, LA POPOLAZIONE AVVIENE SOLO DOPO AVER POPOLATO L'ARRAY
 
 window.onload = async () => {
     await retrieveDatabase()

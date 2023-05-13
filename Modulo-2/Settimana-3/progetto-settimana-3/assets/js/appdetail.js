@@ -1,8 +1,11 @@
+// DICHIARAZIONE VARIABILI
+
 const url = "https://striveschool-api.herokuapp.com/api/product/";
 const urlId = new URLSearchParams(location.search).get("id");
 const riga = document.querySelector(".product-row");
 
 
+// FUNZIONE ASINCRONA PER RICEVERE I DATI DEL SINGOLO PRODOTTO E CREARE LA CARD
 
 async function retrieveSingleProduct() {
 
@@ -43,6 +46,8 @@ async function retrieveSingleProduct() {
         console.error(error.message);
     }
 }
+
+// LANCIO LA FUNZIONE AL CARICAMENTO
 
 window.onload = () => {
     retrieveSingleProduct()

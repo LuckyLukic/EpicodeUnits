@@ -12,11 +12,17 @@
     />
     <title>Form prodotto</title>
   </head>
+
   <body>
+    <!-- MAIN CON FORM -->
     <main class="container-fluid py-5">
       <section class="container py-5">
+        <!-- FORM CON CAMPI INPUT RICHIESTI -->
+
         <form action="#" class="product-form w-50">
           <legend>SCHEDA PRODOTTO</legend>
+
+          <!-- PRODUCT NAME -->
 
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label"
@@ -30,6 +36,8 @@
               required
             />
           </div>
+
+          <!-- DESCRIPTION -->
 
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label"
@@ -45,6 +53,8 @@
             ></textarea>
           </div>
 
+          <!-- BRAND NAME -->
+
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label"
               >Brand</label
@@ -57,6 +67,8 @@
               required
             />
           </div>
+
+          <!-- PICTURE -->
 
           <div class="mb-3">
             <label for="basic-url" class="form-label">Product Picture</label>
@@ -76,6 +88,8 @@
             </div>
           </div>
 
+          <!-- PRICE -->
+
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label"
               >Price</label
@@ -88,13 +102,18 @@
               required
             />
           </div>
+
+          <!-- BOTTONI -->
+
           <div class="button-wrapper d-flex justify-content-center mb-3">
             <button class="btn btn-primary create-button mx-3 px-4">
               CREATE
             </button>
+
             <button class="btn btn-secondary update-button mx-3 px-4">
               UPDATE
             </button>
+
             <button
               class="btn btn-danger delete-button mx-3 px-4"
               data-bs-toggle="modal"
@@ -102,6 +121,7 @@
             >
               DELETE
             </button>
+
             <button
               class="btn btn-success erase-button mx-3 px-4"
               data-bs-toggle="modal"
@@ -200,6 +220,9 @@
             </div>
           </div>
         </form>
+
+        <!-- LINK PER RITORNARE AL CATALOGO -->
+
         <a href="index.html" class="btn btn-warning">TORNA AL CATALOGO</a>
       </section>
     </main>
