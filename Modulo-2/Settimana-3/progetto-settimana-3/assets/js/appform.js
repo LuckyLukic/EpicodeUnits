@@ -1,4 +1,6 @@
 
+// CREAZIONI VARIABILI
+
 const createButton = document.querySelector(".create-button");
 const updateButton = document.querySelector(".update-button");
 const deleteButton = document.querySelector(".delete-button")
@@ -9,7 +11,9 @@ const form = document.querySelector(".product-form");
 const url = "https://striveschool-api.herokuapp.com/api/product/";
 const urlId = new URLSearchParams(location.search).get("id");
 
+// TUTTE LE FUNZIONI ASINCRONE NON FUNZIONANO SE METTO LE VARIABILI ALL'ESTERNO
 
+// FUNZIONE PER RICHIAMARE UN SINGOLO PRODOTTO 
 
 async function retrieveSingleProduct() {
     let productName = document.querySelector(".product-name")
@@ -45,6 +49,7 @@ async function retrieveSingleProduct() {
     }
 }
 
+// FUNZIONE PER CREARE UN NUOVO PRODOTTO 
 
 async function newProduct() {
     const productName = document.querySelector(".product-name").value;
@@ -83,6 +88,7 @@ async function newProduct() {
     }
 }
 
+// FUNZIONE PER AGGIORNAR IL SINGOLO PRODOTTO
 
 async function updateProduct() {
     const productName = document.querySelector(".product-name").value;
@@ -122,6 +128,8 @@ async function updateProduct() {
     }
 }
 
+// FUNZIONE PER CANCELLARE UN SINGOLO PRODOTTO
+
 async function deleteProduct() {
 
     try {
@@ -160,18 +168,15 @@ resetButton.addEventListener("click", (evt) => {
     evt.preventDefault();
 })
 
+deleteButton.addEventListener("click", (evt) => {
+    evt.preventDefault();
+})
+
+// CONTROLLI PER I MODALS SUI TSTI DELETE ED ERASE
 
 yesResetModal.addEventListener("click", (evt) => {
     evt.preventDefault
     form.reset();
-
-
-})
-
-deleteButton.addEventListener("click", (evt) => {
-    evt.preventDefault();
-
-
 })
 
 yesDeleteModal.addEventListener("click", (evt) => {
