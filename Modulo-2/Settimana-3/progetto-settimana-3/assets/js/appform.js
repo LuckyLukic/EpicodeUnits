@@ -59,6 +59,7 @@ async function newProduct() {
     const productBrand = document.querySelector(".product-brand").value;
     const productImage = document.querySelector(".product-image").value;
     const productPrice = document.querySelector(".product-price").value;
+    const saveModal = document.getElementById("saveModal")
 
 
     const productTemplate = {
@@ -83,6 +84,14 @@ async function newProduct() {
         if (!newItem.ok) {
             throw new Error("no product sent into database");
         }
+
+        saveModal.classList.toggle = ("fade")
+
+        setTimeout(() => {
+            saveModal.classList.toggle = ("fade")
+
+        }, 1500);
+
     } catch (error) {
         console.error(error.message);
     }

@@ -10,6 +10,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>Catalogo Generale</title>
   </head>
@@ -17,11 +18,13 @@
   <body>
     <!-- HEADER -->
 
-    <header class="container">
+    <header class="container-fluid">
       <div
         class="button-container d-flex justify-content-center align-items-center py-5"
       >
-        <a class="btn btn-primary" href="form.html">NUOVO PRODOTTO</a>
+        <a class="btn btn-info newProductBtn" href="form.html"
+          >NUOVO PRODOTTO</a
+        >
       </div>
     </header>
 
@@ -29,7 +32,7 @@
 
     <main class="container">
       <section class="container-fluid product-section">
-        <div class="row product-row"></div>
+        <div class="row product-row d-flex gap-4"></div>
       </section>
     </main>
 

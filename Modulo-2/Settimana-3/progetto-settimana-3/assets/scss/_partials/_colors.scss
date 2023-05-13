@@ -1,0 +1,38 @@
+$primo : #3C486B;
+
+$secondo : #0A4D68;
+
+$terzo : #05BFDB;
+
+$quarto: #F0F0F0;
+
+$quinto: #dfb80d;
+
+$sesto: #F45050;
+
+$settimo: #FFF8DE;
+
+
+
+
+.btn-primary {
+    background-color: $sesto !important;
+    border: none;
+    transition: all 0.3s linear 0.1s;
+
+    &:hover {
+        transform: scale(1.08);
+        background-color: $quinto !important;
+    }
+}
+
+.btn-info {
+    background-color: $quinto !important;
+    border: none;
+    transition: all 0.3s linear 0.1s;
+
+    &:hover {
+        transform: scale(1.08);
+        background-color: $sesto !important;
+    }
+}

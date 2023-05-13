@@ -44,7 +44,7 @@ const population = () => {
     for (let i of productArray) {
         riga.innerHTML += `<div class="card-container col-6 col-md-4 col-lg-3">
         <div class="card h-100">
-        <img src="${i.imageUrl}" class="card-img-top w-100 object-fit-cover" alt="card-image ">
+        <img src="${i.imageUrl}" class="card-img-top" alt="card-image ">
         <div class="card-body">
           <h5> NAME:${i.name}</h5>
           <h5> PRICE: $ ${i.price} </h5>

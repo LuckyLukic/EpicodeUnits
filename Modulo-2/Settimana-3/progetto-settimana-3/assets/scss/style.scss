@@ -1,0 +1,68 @@
+@import"./_partials/colors";
+
+
+
+
+body {
+    background-color: $quarto;
+}
+
+header {
+    background-color: $primo;
+}
+
+header p {
+    font-size: 2rem;
+    color: $settimo;
+    font-weight: 500;
+}
+
+.newProductBtn,
+header P {
+    animation: header 0.8s linear 0.1s backwards;
+}
+
+@keyframes header {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+section .row {
+    padding: 1rem 0;
+}
+
+.card {
+    border: none;
+}
+
+.card-container {
+    padding: 0 !important;
+    max-width: 23.5%;
+    box-shadow: 2px 2px 4px #a9a6a6;
+    animation: cardsOnload 0.8s linear 0.1s backwards;
+}
+
+@keyframes cardsOnload {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+input,
+textarea {
+    border: 1px solid #C1D0B5 !important;
+}

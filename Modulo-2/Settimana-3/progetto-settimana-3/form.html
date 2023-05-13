@@ -10,6 +10,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Form prodotto</title>
   </head>
 
@@ -19,7 +20,7 @@
       <section class="container py-5">
         <!-- FORM CON CAMPI INPUT RICHIESTI -->
 
-        <form action="#" class="product-form w-50">
+        <form action="#" class="product-form w-50 mb-5">
           <legend>SCHEDA PRODOTTO</legend>
 
           <!-- PRODUCT NAME -->
@@ -32,6 +33,7 @@
               type="text"
               class="form-control product-name"
               id="exampleFormControlInput1"
+              minlength="1"
               placeholder="product name"
               required
             />
@@ -63,6 +65,7 @@
               type="text"
               class="form-control product-brand"
               id="exampleFormControlInput1"
+              minlength="1"
               placeholder="brand name"
               required
             />
@@ -197,7 +200,7 @@
                     ></button>
                   </div>
                   <div class="modal-body">
-                    are you sure to delete this product)
+                    are you sure to delete this product?
                   </div>
                   <div class="modal-footer">
                     <button
@@ -222,8 +225,9 @@
         </form>
 
         <!-- LINK PER RITORNARE AL CATALOGO -->
-
-        <a href="index.html" class="btn btn-warning">TORNA AL CATALOGO</a>
+        <div>
+          <a href="index.html" class="btn btn-info">TORNA AL CATALOGO</a>
+        </div>
       </section>
     </main>
 
