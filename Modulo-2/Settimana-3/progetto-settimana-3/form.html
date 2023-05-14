@@ -16,214 +16,224 @@
 
   <body>
     <!-- MAIN CON FORM -->
-    <main class="container-fluid py-5">
+    <main class="container-fluid">
+      <header class="d-flex justify-content-center align-items-center py-4">
+        <p>FORM</p>
+      </header>
+
       <section class="container py-5">
         <!-- FORM CON CAMPI INPUT RICHIESTI -->
+        <div class="row">
+          <form action="#" class="product-form col-12 col-lg-6 mb-5">
+            <legend>SCHEDA PRODOTTO</legend>
 
-        <form action="#" class="product-form w-50 mb-5">
-          <legend>SCHEDA PRODOTTO</legend>
+            <!-- PRODUCT NAME -->
 
-          <!-- PRODUCT NAME -->
-
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Product Name</label
-            >
-            <input
-              type="text"
-              class="form-control product-name"
-              id="exampleFormControlInput1"
-              minlength="1"
-              placeholder="product name"
-              required
-            />
-          </div>
-
-          <!-- DESCRIPTION -->
-
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"
-              >Description</label
-            >
-            <textarea
-              class="form-control product-description"
-              id="exampleFormControlTextarea1"
-              rows="2"
-              min-lenght="20"
-              placeholder="min 20 characters"
-              required
-            ></textarea>
-          </div>
-
-          <!-- BRAND NAME -->
-
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Brand</label
-            >
-            <input
-              type="text"
-              class="form-control product-brand"
-              id="exampleFormControlInput1"
-              minlength="1"
-              placeholder="brand name"
-              required
-            />
-          </div>
-
-          <!-- PICTURE -->
-
-          <div class="mb-3">
-            <label for="basic-url" class="form-label">Product Picture</label>
-            <div class="input-group">
-              <span class="input-group-text" id="basic-addon3"
-                >https://example.com/users/</span
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Product Name</label
               >
               <input
                 type="text"
-                class="form-control product-image"
-                id="basic-url"
-                aria-describedby="basic-addon3 basic-addon4"
+                class="form-control product-name"
+                id="exampleFormControlInput1"
+                minlength="1"
+                placeholder="product name"
+                required
               />
             </div>
-            <div class="form-text" id="basic-addon4">
-              Example help text goes outside the input group.
+
+            <!-- DESCRIPTION -->
+
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Description</label
+              >
+              <textarea
+                class="form-control product-description"
+                id="exampleFormControlTextarea1"
+                rows="2"
+                min-lenght="20"
+                placeholder="min 20 characters"
+                required
+              ></textarea>
             </div>
-          </div>
 
-          <!-- PRICE -->
+            <!-- BRAND NAME -->
 
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Price</label
-            >
-            <input
-              type="number"
-              class="form-control product-price"
-              id="exampleFormControlInput1"
-              placeholder="price"
-              required
-            />
-          </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Brand</label
+              >
+              <input
+                type="text"
+                class="form-control product-brand"
+                id="exampleFormControlInput1"
+                minlength="1"
+                placeholder="brand name"
+                required
+              />
+            </div>
 
-          <!-- BOTTONI -->
+            <!-- PICTURE -->
 
-          <div class="button-wrapper d-flex justify-content-center mb-3">
-            <button class="btn btn-primary create-button mx-3 px-4">
-              CREATE
-            </button>
+            <div class="mb-3">
+              <label for="basic-url" class="form-label">Product Picture</label>
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon3"
+                  >https://example.com/users/</span
+                >
+                <input
+                  type="text"
+                  class="form-control product-image"
+                  id="basic-url"
+                  aria-describedby="basic-addon3 basic-addon4"
+                />
+              </div>
+              <div class="form-text" id="basic-addon4">
+                Example help text goes outside the input group.
+              </div>
+            </div>
 
-            <button class="btn btn-secondary update-button mx-3 px-4">
-              UPDATE
-            </button>
+            <!-- PRICE -->
 
-            <button
-              class="btn btn-danger delete-button mx-3 px-4"
-              data-bs-toggle="modal"
-              data-bs-target="#delete"
-            >
-              DELETE
-            </button>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Price</label
+              >
+              <input
+                type="number"
+                class="form-control product-price"
+                id="exampleFormControlInput1"
+                placeholder="price"
+                required
+              />
+            </div>
 
-            <button
-              class="btn btn-success erase-button mx-3 px-4"
-              data-bs-toggle="modal"
-              data-bs-target="#reset"
-            >
-              RESET
-            </button>
+            <!-- BOTTONI -->
 
-            <!-- MODALS -->
+            <div class="button-wrapper d-flex justify-content-end mb-3">
+              <button class="btn btn-primary create-button ms-4 px-4">
+                CREATE
+              </button>
 
-            <!-- RESET MODAL -->
-            <div
-              class="modal fade"
-              id="reset"
-              data-bs-backdrop="static"
-              data-bs-keyboard="false"
-              tabindex="-1"
-              aria-labelledby="staticBackdropLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">RESET</h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
+              <button class="btn btn-secondary update-button ms-4 px-4">
+                UPDATE
+              </button>
+
+              <button
+                class="btn btn-danger delete-button ms-4 px-4"
+                data-bs-toggle="modal"
+                data-bs-target="#delete"
+              >
+                DELETE
+              </button>
+
+              <button
+                class="btn btn-success erase-button ms-4 px-4"
+                data-bs-toggle="modal"
+                data-bs-target="#reset"
+              >
+                RESET
+              </button>
+
+              <!-- MODALS -->
+
+              <!-- RESET MODAL -->
+              <div
+                class="modal fade"
+                id="reset"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">
+                        RESET
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      are you sure to reset the form?
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        NO
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary reset-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        YES
+                      </button>
+                    </div>
                   </div>
-                  <div class="modal-body">are you sure to reset the form?</div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      NO
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-primary reset-modal"
-                      data-bs-dismiss="modal"
-                    >
-                      YES
-                    </button>
+                </div>
+              </div>
+
+              <!--DELETE MODAL -->
+
+              <div
+                class="modal fade"
+                id="delete"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">
+                        RESET
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      are you sure to delete this product?
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        NO
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary delete-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        YES
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!--DELETE MODAL -->
-
-            <div
-              class="modal fade"
-              id="delete"
-              data-bs-backdrop="static"
-              data-bs-keyboard="false"
-              tabindex="-1"
-              aria-labelledby="staticBackdropLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">RESET</h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    are you sure to delete this product?
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      NO
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-primary delete-modal"
-                      data-bs-dismiss="modal"
-                    >
-                      YES
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
-
+          </form>
+        </div>
         <!-- LINK PER RITORNARE AL CATALOGO -->
         <div>
           <a href="index.html" class="btn btn-info">TORNA AL CATALOGO</a>

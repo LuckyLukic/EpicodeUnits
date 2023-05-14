@@ -32,6 +32,7 @@ async function retrieveSingleProduct() {
         });
 
         if (!newRequest.ok) {
+            alert("fail to update database!")
             throw new Error("no product retrived from database");
         }
 
@@ -80,11 +81,12 @@ async function newProduct() {
         });
 
         if (!newItem.ok) {
+            alert("fail to update database!")
             throw new Error("no product sent into database");
+        } else {
+
+            alert("nuovo prodotto creato")
         }
-
-        alert("nuovo prodotto creato")
-
     } catch (error) {
         console.error(error.message);
     }
@@ -122,10 +124,13 @@ async function updateProduct() {
         });
 
         if (!updatedItem.ok) {
+            alert("error in updating, retry!")
             throw new Error("no product sent to database");
-        }
 
-        alert("prodotto aggiornato")
+        } else {
+
+            alert("prodotto aggiornato")
+        }
 
     } catch (error) {
         console.error(error.message);
@@ -146,6 +151,7 @@ async function deleteProduct() {
         });
 
         if (!updatedItem.ok) {
+            alert("database error, product not deleted!")
             throw new Error("no product sent to database");
         }
 
