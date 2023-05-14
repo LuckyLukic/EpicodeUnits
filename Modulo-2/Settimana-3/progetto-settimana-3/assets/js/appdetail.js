@@ -25,7 +25,7 @@ async function retrieveSingleProduct() {
         const productDetail = await newRequest.json();
 
         riga.innerHTML = "";
-        riga.innerHTML = `<div class=" row d-flex justify-content-center gap-2 card-detail">
+        riga.innerHTML = `<div class=" row d-flex justify-content-center g-4 card-detail">
 
         <div class="card-container cardContainer-detail col-12 col-md-6 d-flex justify-content-center">
         <div class="card">
@@ -34,9 +34,8 @@ async function retrieveSingleProduct() {
           <h5> NAME:${productDetail.name}</h5>
           <h5> PRICE: $ ${productDetail.price} </h5>
           <h5 >BRAND: ${productDetail.brand}</h5>
-          <div class="cardButton-detail d-flex justify-content-end" >
-          
-          <a href="index.html" class="btn btn-primary btn-modifica button-detail">TORNA INDIETRO</a>
+          <div class="cardButton-detail d-flex justify-content-end mt-auto" >
+          <a href="index.html" class="btn btn-primary button-detail">TORNA INDIETRO</a>
           </div>
         </div >
       </div >
