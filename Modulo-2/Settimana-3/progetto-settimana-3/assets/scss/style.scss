@@ -1,8 +1,6 @@
 @import"./_partials/colors";
 
 
-
-
 body {
     background-color: $quarto;
 }
@@ -42,12 +40,25 @@ section .row {
     border: none;
 }
 
-.card-container {
+.card-index {
     padding: 0 !important;
     max-width: 23.5%;
     box-shadow: 2px 2px 4px #a9a6a6;
     animation: cardsOnload 0.8s linear 0.1s backwards;
 }
+
+.card-detail {
+    animation: cardsOnload 0.8s linear 0.1s backwards;
+}
+
+.cardContainer-detail {
+    max-width: 47%;
+}
+
+.product-detail {
+    max-width: 47%;
+}
+
 
 @keyframes cardsOnload {
     from {
@@ -65,4 +76,51 @@ section .row {
 input,
 textarea {
     border: 1px solid #C1D0B5 !important;
+}
+
+@media screen and (max-width:1200px) {
+
+    .cardButtons-container {
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .card-index {
+        max-width: 31%;
+    }
+
+    .button-detail {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .card-index {
+        max-width: 48%;
+    }
+
+    .cardContainer-detail {
+        max-width: 90%;
+    }
+
+    .product-detail {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .card-index {
+        max-width: 100%;
+        row-gap: 1rem;
+    }
+
+    .cardButtons-container {
+        flex-direction: column;
+        row-gap: 1rem;
+        width: 50%;
+    }
+
 }
