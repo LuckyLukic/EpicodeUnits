@@ -42,7 +42,7 @@ async function retrieveDatabase() {
 const population = () => {
     riga.innerHTML = "";
     for (let i of productArray) {
-        riga.innerHTML += `<div class="card-container card-index col-sm-6 col-md-4 col-lg-3">
+        riga.innerHTML += `<div class="card-container card-index col-10 col-sm-6 col-md-4 col-lg-3">
         <div class="card h-100">
         <img src="${i.imageUrl}" class="card-img-top mb-2" alt="card-image ">
         <div class="card-body d-flex flex-column">
