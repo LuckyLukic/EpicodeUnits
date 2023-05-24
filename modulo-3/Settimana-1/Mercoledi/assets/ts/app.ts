@@ -98,20 +98,18 @@ btnCommerciante.addEventListener("click", (evt):void => {
     }
 });
 
-const reset = ():void =>{
-    // let input = document.querySelectorAll("input");
-    // input.forEach(element => element.innerHTML = "")
-    redditoLordo!.innerHTML = "";
-    utileTasse!.innerHTML = "";
-    tasseInps!.innerHTML = "";
-    tasseIrpef!.innerHTML = "";
-    redditoNetto!.innerHTML = "";
+const resetta = ():void =>{
+    let input = document.querySelectorAll("input");
+    input.forEach(element => element.value = "")
 } 
 
 btnReset.addEventListener("click", (evt):void => {
     evt.preventDefault();
-    reset();
+    console.log(btnReset)
+    resetta();
 })
+
+
 
 
 

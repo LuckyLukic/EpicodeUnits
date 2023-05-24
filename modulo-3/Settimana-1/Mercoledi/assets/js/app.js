@@ -83,16 +83,12 @@ btnCommerciante.addEventListener("click", (evt) => {
         redditoNetto.value = `${nuovoUtente.getRedditoAnnuoNetto()}`;
     }
 });
-const reset = () => {
-    // let input = document.querySelectorAll("input");
-    // input.forEach(element => element.innerHTML = "")
-    redditoLordo.innerHTML = "";
-    utileTasse.innerHTML = "";
-    tasseInps.innerHTML = "";
-    tasseIrpef.innerHTML = "";
-    redditoNetto.innerHTML = "";
+const resetta = () => {
+    let input = document.querySelectorAll("input");
+    input.forEach(element => element.value = "");
 };
 btnReset.addEventListener("click", (evt) => {
     evt.preventDefault();
-    reset();
+    console.log(btnReset);
+    resetta();
 });
