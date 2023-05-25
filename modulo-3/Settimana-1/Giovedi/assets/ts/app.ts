@@ -1,9 +1,12 @@
 
 class Abbigliamento {
+
+    
  
     constructor (protected id:number, protected codprod:number, protected collezione:string, protected capo:string, protected modello:number, protected quantita:number, protected colore:string, protected prezzoivaesclusa:number, protected prezzoivainclusa:number, protected disponibile:string, protected saldo:number) {
 
     }
+
     getsaldocapo():number {
         let saldo:number = ((this.prezzoivainclusa*this.saldo)/100)
     return saldo
@@ -15,10 +18,9 @@ class Abbigliamento {
     }
     }
 
-
 const newFetch = async () => {
     try{
-        const miaFetch:any = await fetch("../starter/Abbigliamento.json")
+        const miaFetch = await fetch("../starter/Abbigliamento.json")
         
         const mioJson = await miaFetch.json();
         
