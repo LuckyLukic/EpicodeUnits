@@ -64,11 +64,11 @@ utente2.azzeraChiamate(0);
 console.log("******UTENTE3*******")
 
 const utente3 = new Utente (100, 19);
-utente2.ricarica(25);
-utente2.chiamata(579);
-console.log(utente2.numero404(utente1.credito));
-console.log(utente2.getNumeroChiamate(utente1.numeroChiamate));
-utente2.azzeraChiamate(0);
+utente3.ricarica(25);
+utente3.chiamata(579);
+console.log(utente3.numero404(utente3.credito));
+console.log(utente3.getNumeroChiamate(utente3.numeroChiamate));
+utente3.azzeraChiamate(0);
 
 
 
