@@ -1,0 +1,159 @@
+/* NORMALIZER */
+html,body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    font-size: 1em;
+}
+
+p {
+    margin: 0.3rem;
+}
+
+/* HEADER */
+header {
+    padding: 3rem 0;
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+/* SECTION BUTTONS */
+
+section.buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+button {
+    padding: 0.5rem;
+}
+
+.crea:focus {
+    background-color:rgb(1, 161, 1);
+    color:white;
+}
+
+.mostra:focus {
+    background-color:rgb(1, 161, 1);
+    color:white;
+}
+
+.cerca:focus {
+    background-color:rgb(1, 161, 1);
+    color:white;
+}
+
+.ritorna:active {
+    background-color: rgb(13, 136, 238);
+    color: white;
+}
+
+.invioForm:active {
+    background-color: rgb(95, 246, 95);
+}
+
+.resetForm:active {
+    background-color: rgb(232, 53, 21);
+    color: white;
+}
+
+button.delete:active {
+    background-color: rgb(232, 53, 21);
+    color: white;
+}
+
+button.clear:active {
+    background-color: rgb(13, 136, 238);
+    color: white;
+}
+
+/* SECTION FORM */
+section.formSection {
+    margin: 0 auto;
+    width: 35%;
+
+}
+.singleForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 1rem;
+}
+
+.singleForm div {
+    display:flex;
+    justify-content: space-between;
+}
+
+.singleForm div input {
+    width: 20%;
+}
+
+.singleForm div input {
+    width: 80%;
+}
+
+.singleForm .buttonsForm {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 0.8rem;
+}
+
+.buttonsForm button {
+    width: 20%
+}
+
+section.listaClienti div.usersContainer {
+    display:flex;
+    justify-content: space-around;
+}
+
+section.listaClienti div.singleUser {
+    display: flex;
+    flex-direction: column;
+    width:25%;
+}
+
+.singleUser div {
+    display: flex;
+}
+
+button.delete {
+    width:25%;
+}
+
+
+/* CLASSE DI CONTROLLO VISIBILITA' */
+
+.noShow {
+    display: none;
+}
+
+.ricercaForm {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.buttonsFormSingleUser button {
+    width: 8%;
+    margin: 0 0.3rem;
+}
+
+.singleUser {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap:0.3rem;
+}
+
+.clear {
+    width:8%;
+}
+
