@@ -42,25 +42,25 @@ class NewUser implements UtenteSingolo{
             this.email=_email;
         }
 
-        changeName(newName:string):void {
-            this.name = newName
-        }
+        // changeName(newName:string):void {
+        //     this.name = newName
+        // }
 
-        changeSurname(newSurname:string):void {
-            this.surname = newSurname
-        }
+        // changeSurname(newSurname:string):void {
+        //     this.surname = newSurname
+        // }
 
-        changeAge(newAge:number):void {
-            this.age = newAge
-        }
+        // changeAge(newAge:number):void {
+        //     this.age = newAge
+        // }
 
-        changeAddress(newAddress:string):void {
-            this.name = newAddress
-        }
+        // changeAddress(newAddress:string):void {
+        //     this.name = newAddress
+        // }
         
-        changeEmail(newEmail:string):void {
-            this.email = newEmail
-        }
+        // changeEmail(newEmail:string):void {
+        //     this.email = newEmail
+        // }
 
 }
  
@@ -83,7 +83,7 @@ class NewUser implements UtenteSingolo{
         
           await postMethod(user);
 
-        } else if(+inputEta!.value === 0 || +inputEta!.value > 100) {
+        } else if(+inputEta!.value <= 0 || +inputEta!.value >= 100) {
             alert ("please your age must be between 1 and 99")
         } else if(!inputEmail!.value.match(regex)) {
             alert ("email format incorrect")
@@ -168,7 +168,7 @@ class NewUser implements UtenteSingolo{
 
     btnRitorna.addEventListener("click", ():void => {
       sectionForm?.classList.add("noShow");
-      btnRitorna.classList.add("noShow");
+      btnRitorna?.classList.add("noShow");
      })
 
 
@@ -262,7 +262,7 @@ class NewUser implements UtenteSingolo{
                 btnMostra.classList.add("noShow");
                 btnCerca.classList.add("noShow");
                 sectionClienti?.classList.add("noShow")
-                // RISPECIFICO ARRAY VUOTO PER SVUOTARLO COMPLETAMENTE QUALORE ELIMIASSI ANCHE L'ULTIMO ELEMENTO DEL DATABASE
+                // RISPECIFICO ARRAY VUOTO PER SVUOTARLO COMPLETAMENTE QUALORE ELIMINASSI ANCHE L'ULTIMO ELEMENTO DEL DATABASE
                 dataArray = []
             } else {
                   btnMostra.classList.remove("noShow");
