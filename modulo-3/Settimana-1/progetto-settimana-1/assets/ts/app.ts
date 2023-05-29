@@ -359,7 +359,7 @@ class NewUser implements UtenteSingolo{
 
     // ONLOAD DATABASE
 
-     window.onload = async () => {
+     window.onload = ():void => {
         landing();
      } 
 
