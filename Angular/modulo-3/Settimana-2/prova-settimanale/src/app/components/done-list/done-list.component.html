@@ -1,7 +1,15 @@
+<ng-container *ngIf="myArray.length === 0; else yesTasks">
+  <p *ngIf="chill" class="fw-bold">Working for you....just realaaaaaaax!</p>
+  <p *ngIf="!chill" class="fw-bold">there are no comleted tasks</p>
+</ng-container>
+
+<ng-template #yesTasks class="text-center">
+  <p *ngIf="chill" class="fw-bold">Working for you....just realaaaaaaax!</p>
+</ng-template>
+
 <ol *ngIf="myArray.length !== 0" class="contenitoreTask">
   <ng-container *ngFor="let i of myArray">
     <!-- Creo <li> solo se ilparametro completed e' true -->
-
     <li *ngIf="i.completed === true" class="d-flex py-3">
       <div
         class="d-flex w-100 justify-content-between align-items-center text-start taskWrapper"
@@ -11,7 +19,6 @@
           <input type="checkbox" class="me-md-2" />
 
           <!-- rimuovo definitivamente dall'array il task completato -->
-
           <button class="btn btn-warning" (click)="removeTask(i)">
             COMPLETED
           </button>

@@ -3,24 +3,21 @@
 <div class="d-flex flex-column mb-3 mb-lg-5 contenitore">
   <!-- contenitore non nel DOM che appare qualora all'inizializzazione della pagina myArray non e' vuoto -->
   <ng-container *ngIf="myArray.length !== 0; else noTasks">
-    <p *ngIf="chill">Working for you....just realaaaaaaax!</p>
-    <label for="task" class="align-self-start mb-2">Your Tasks</label>
+    <p *ngIf="chill" class="fw-bold">Working for you....just realaaaaaaax!</p>
+    <label *ngIf="!chill" for="task" class="align-self-start mb-2"
+      >Your Tasks</label
+    >
   </ng-container>
-
-  <!-- <ng-template #yesTasks *ngIf="myArray.length !== 0; else noTasks">
-    <label for="task" class="align-self-start mb-2">Your Tasks</label>
-  </ng-template> -->
 
   <!-- alternativa qualora myArray fosse vuoto -->
   <ng-template #noTasks>
-    <p *ngIf="chill">Working for you....just realaaaaaaax!</p>
-    <label for="task" class="align-self-start mb-2"
+    <p *ngIf="chill" class="fw-bold">Working for you....just realaaaaaaax!</p>
+    <label *ngIf="!chill" for="task" class="align-self-start mb-2"
       >What's new? Add your first task</label
     >
   </ng-template>
 
   <!-- 2 ways binding affinche' la variabile task assuma il valore del campo input in tempo reale -->
-
   <div class="d-flex justify-content-between inputButtons">
     <input type="text" [(ngModel)]="task" id="task" class="me-3" />
     <div class="d-flex justify-content-between buttons">
@@ -34,13 +31,11 @@
       </button>
 
       <!-- bottone reset del campo input. disabilitato se il campo input e' vuoto -->
-
       <button class="btn btn-primary" [disabled]="!task" (click)="resetField()">
         RESET
       </button>
 
       <!-- bottone per resettare tutto tramite l'azzeramento di myArray -->
-
       <button
         class="btn btn-danger"
         [disabled]="myArray.length === 0"
@@ -57,7 +52,6 @@
 <ol *ngIf="myArray.length !== 0" class="contenitoreTask">
   <ng-container *ngFor="let i of myArray">
     <!-- creo <li> solo se il parametro completed e' = false -->
-
     <li *ngIf="i.completed === false" class="d-flex py-3">
       <div
         class="d-flex w-100 justify-content-between align-items-center text-start taskWrapper"
@@ -65,11 +59,9 @@
         <p class="mb-0">{{ i.title }}</p>
         <div class="d-flex ms-md-auto align-items-center completedWrapper">
           <!-- creo un checkbox per ogni li, bindo la proprieta' checked (che ho aggiunto in interface) di ogni oggetto in modo che ne cambi lo stato da false a true-->
-
           <input type="checkbox" class="me-md-2" [(ngModel)]="i.checked" />
 
           <!-- al click cambio lo stato della proprieta completed a true ed elimino l' <li> relativo dal DOM -->
-
           <button class="btn btn-warning" (click)="removeTask(i)">
             COMPLETED
           </button>

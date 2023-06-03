@@ -10,6 +10,7 @@ import { Template } from 'src/app/modules/template.interface';
 export class DoneListComponent implements OnInit {
 
   myArray: Template [] = [];
+  chill: boolean = true;
 
   constructor(private methodSrv: MethodsService) { }
 
@@ -27,6 +28,7 @@ export class DoneListComponent implements OnInit {
 
     setTimeout (() => {
       this.myArray = this.methodSrv.getArray()
+      this.chill = false;
     },2000)
   }
 
