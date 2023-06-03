@@ -1,0 +1,126 @@
+input {
+  width: 65%;
+  border-radius: 5px;
+  border: 1px solid rgba(146, 141, 141, 0.901);
+  font-size: 1.2em;
+}
+
+.buttons {
+  width: 35%;
+}
+
+.contenitore {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.contenitoreTask {
+  width: 70%;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+
+  li {
+    border-bottom: 1px solid rgba(174, 170, 170, 0.901);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+
+  .contenitore {
+    width: 80%;
+  }
+
+  .contenitoreTask {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .contenitore {
+    width: 100%;
+  }
+
+  .contenitoreTask {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .inputButtons {
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+
+  input {
+    width: 100%;
+    height: 2.2rem;
+  }
+
+  .buttons {
+    width: 100%;
+
+    button {
+      width: 30%;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .taskWrapper {
+    flex-direction: column;
+    row-gap: 1rem;
+
+    p {
+      width: 100%;
+      font-size: 1.2em;
+
+    }
+  }
+
+  .completedWrapper {
+    width: 100%;
+    flex-direction: row-reverse;
+
+    input {
+      align-self: center;
+      width: 20px;
+      margin-right: auto;
+    }
+
+    .btn-warning {
+      width: 43%;
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .buttons {
+    flex-direction: column;
+    row-gap: 0.5rem;
+    margin: 0;
+    column-gap: 0.5rem;
+
+    button {
+      width: 100%;
+    }
+  }
+
+  .completedWrapper {
+    justify-content: space-between;
+
+    .btn-warning {
+      width: 80%;
+      margin-right: 0;
+    }
+
+    input {
+      margin: 0;
+    }
+  }
+}

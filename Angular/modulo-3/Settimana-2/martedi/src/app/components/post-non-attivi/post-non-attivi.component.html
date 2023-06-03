@@ -1,0 +1,17 @@
+<main class="container my-5">
+  <div *ngFor="let i of myArray" class="row mb-3">
+    <div *ngIf="!i.active" class="card col-8">
+      <div class="card-header">
+        {{ i.title }}
+      </div>
+      <div class="card-body">
+        <div class="card text">
+          {{ i.body }}
+        </div>
+        <div class="card-text">
+          {{ i.id }}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
