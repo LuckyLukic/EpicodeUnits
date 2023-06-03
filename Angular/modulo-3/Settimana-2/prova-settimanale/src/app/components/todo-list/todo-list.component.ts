@@ -25,7 +25,6 @@ export class TodoListComponent implements OnInit {
     setTimeout(() => {
       this.methodSrv.pushToArray(prova);
       this.resetField();
-      this.chill = false;
     }, 1500);
   }
 
@@ -34,7 +33,6 @@ export class TodoListComponent implements OnInit {
     if (element.checked) {
       setTimeout(() => {
       this.methodSrv.changeStatus(element);
-      this.chill = false;
       },1500)
     }
   }
@@ -48,7 +46,6 @@ export class TodoListComponent implements OnInit {
   resetAll(): void {
     setTimeout(() => {
       this.methodSrv.resetArray();
-      this.chill = false;
     }, 1500);
   }
 
