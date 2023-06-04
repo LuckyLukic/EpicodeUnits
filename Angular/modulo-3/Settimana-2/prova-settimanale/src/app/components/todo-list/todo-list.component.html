@@ -2,7 +2,7 @@
 
 <div class="d-flex flex-column mb-3 mb-lg-5 contenitore">
   <!-- contenitore non nel DOM che appare qualora all'inizializzazione della pagina myArray non e' vuoto -->
-  <ng-container *ngIf="myArray.length !== 0; else noTasks">
+  <ng-container *ngIf="myArray.length !== 0 && !doublecheck(); else noTasks">
     <p *ngIf="chill" class="fw-bold">Working for you....just realaaaaaaax!</p>
     <label *ngIf="!chill" for="task" class="align-self-start mb-2"
       >Your Tasks</label

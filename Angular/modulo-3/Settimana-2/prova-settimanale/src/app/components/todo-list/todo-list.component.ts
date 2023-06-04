@@ -49,6 +49,12 @@ export class TodoListComponent implements OnInit {
     }, 1500);
   }
 
+  // extracontrollo per far apparire il giusto messaggio di avvio
+
+  doublecheck ():boolean {
+     return this.myArray.every(i => i.completed === true)
+  }
+
   ngOnInit(): void {
     setTimeout(() => {
       this.myArray = this.methodSrv.getArray();

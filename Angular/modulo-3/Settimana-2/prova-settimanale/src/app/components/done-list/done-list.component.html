@@ -1,6 +1,6 @@
-<ng-container *ngIf="myArray.length === 0; else yesTasks">
+<ng-container *ngIf="myArray.length === 0 || doublecheck(); else yesTasks">
   <p *ngIf="chill" class="fw-bold">Working for you....just realaaaaaaax!</p>
-  <p *ngIf="!chill" class="fw-bold">there are no comleted tasks</p>
+  <p *ngIf="!chill" class="fw-bold">there are no completed tasks</p>
 </ng-container>
 
 <ng-template #yesTasks class="text-center">

@@ -22,6 +22,10 @@ export class DoneListComponent implements OnInit {
     },1500)
   }
 
+  doublecheck ():boolean {
+    return this.myArray.every(i => i.completed === false)
+ }
+
   // richaimo l'array dal service per copiarlo in myArray
 
   ngOnInit(): void {
