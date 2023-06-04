@@ -18,6 +18,8 @@ export class TodoListComponent implements OnInit {
   // controllo per far apparire frase di attesa durante i timeout.
   chill: boolean = true;
 
+  textInput:boolean = true
+
   constructor(private methodSrv: MethodsService) {}
 
   // metodo per pushare il valore dell input nell array e farlo apparire a schermo + reset del campo input
@@ -59,6 +61,7 @@ export class TodoListComponent implements OnInit {
     setTimeout(() => {
       this.myArray = this.methodSrv.getArray();
       this.chill = false;
+      this.textInput = false;
     }, 2000);
   }
 }

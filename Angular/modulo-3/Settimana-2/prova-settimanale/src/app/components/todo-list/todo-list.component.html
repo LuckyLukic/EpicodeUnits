@@ -19,7 +19,13 @@
 
   <!-- 2 ways binding affinche' la variabile task assuma il valore del campo input in tempo reale -->
   <div class="d-flex justify-content-between inputButtons">
-    <input type="text" [(ngModel)]="task" id="task" class="me-3" />
+    <input
+      type="text"
+      [(ngModel)]="task"
+      id="task"
+      class="me-3"
+      [disabled]="textInput"
+    />
     <div class="d-flex justify-content-between buttons">
       <!-- Bottone che conferma la scelta e al click pusha il valore in MyArray. Bottone disabilitato se il campo input e' vuoto -->
       <button
