@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-center">
+<form #form="ngForm" (ngSubmit)="accedi(form)" class="col-6">
+  <div class="form-group mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control mb-3" name="email" id="email" aria-describedby="email" placeholder="required" required ngModel>
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control" name="password" id="password" aria-describedby="password" placeholder="required" required ngModel>
+  </div>
+  <button type="submit" class="btn btn-primary mt-3" [disabled]="form.invalid">Accedi</button>
+</form>
+
+</div>
+
+
+
+<!-- <div class="row d-flex justify-content-center">
+<form class="col-6 mb-5">
+<div class="mb-3">
+  <label for="exampleInputEmail1" class="form-label">Email</label>
+  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+</div>
+<div class="mb-3">
+  <label for="password" class="form-label">Password</label>
+  <input type="password" class="form-control" id="password" aria-describedby="password">
+  <div id="passwordlHelp" class="form-text"> Never share your email with anyone else.</div>
+</div>
+</form>
+</div> -->
