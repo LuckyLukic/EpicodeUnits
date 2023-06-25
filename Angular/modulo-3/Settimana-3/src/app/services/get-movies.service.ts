@@ -36,10 +36,5 @@ export class GetMoviesService {
     return this.http.delete(this.url+`favorites/${favoriteId}`)
   }
 
-
-
-
-
-
 }
 
