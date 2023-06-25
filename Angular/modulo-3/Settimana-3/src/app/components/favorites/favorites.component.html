@@ -3,25 +3,32 @@
 <ng-template #showmovies>
   <div class="container-fluid">
     <div class="row row-gap-3">
-      <div class="cardwrapper col-3" *ngFor="let singleMovie of favoriteMovies">
+      <div class="cardwrapper col-3" *ngFor="let singleMovie of preferedMovieList">
         <div class="card h-100">
-          <!-- <img
+          <img
             src="{{ poster }}{{ singleMovie.poster_path }}"
             class="card-img-top"
             alt="movie poster"
-          /> -->
+          />
           <div class="card-body d-flex flex-column justify-content-between">
-            <h5 class="card-title">Movie id:{{ singleMovie.movieId }}</h5>
+            <h5 class="card-title">Title:{{ singleMovie.title }}</h5>
             <div class="d-flex flex-column">
-              <p class="card-text mb-2">id: {{ singleMovie.id }}</p>
-              <p class="card-text mb-2">User id: {{ singleMovie.userId }}</p>
+              <p class="card-text mb-2">Id: {{ singleMovie.id }}</p>
+              <p class="card-text mb-2">Popularity: {{ singleMovie.popularity }}</p>
 
 
               <a
                 [routerLink]="['/movies', singleMovie.id]"
                 class="btn btn-primary mb-2"
-                >DETAIL</a
-              >
+                >DETAIL</a>
+
+                <button
+                      class="btn btn-danger w-100"
+                      type="button"
+                      (click)="removeFavorite(singleMovie.id)"
+                    >
+                      REMOVE
+                    </button>
 
             </div>
           </div>

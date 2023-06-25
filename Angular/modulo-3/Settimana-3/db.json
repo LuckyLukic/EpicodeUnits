@@ -15,6 +15,14 @@
       "surname": "Kirsch",
       "username": "aouhououfww",
       "id": 2
+    },
+    {
+      "email": "Ciccio@gmail.com",
+      "password": "$2a$10$zNTosOVbykgGTLS82DsX3uH2f9274z9pp6eGsjGn1OUNVX0CzDoCO",
+      "name": "Ciccio",
+      "surname": "Ciccio",
+      "username": "CiccioCiccio",
+      "id": 3
     }
   ],
   "favorites": [
@@ -34,9 +42,14 @@
       "id": 3
     },
     {
-      "movieId": 567189,
+      "movieId": 632357,
       "userId": 2,
-      "id": 4
+      "id": 5
+    },
+    {
+      "movieId": 578701,
+      "userId": 2,
+      "id": 7
     }
   ],
   "genres": [
